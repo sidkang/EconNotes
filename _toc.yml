@@ -1,0 +1,27 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: 宏观经济学二十五讲
+    numbered: 3
+    chapters:
+    - file: note/macro-25/ch00.md
+    - file: note/macro-25/ch01.md
+    - file: note/macro-25/ch02.md
+    - file: note/macro-25/ch03.md
+    - file: note/macro-25/ch04.md
+    - file: note/macro-25/ch05.md
+
+  - caption: Syntax Reference
+    chapters:
+    - file: markdown.md
+    - file: notebooks.ipynb
+    - file: markdown-notebooks
+    - url: https://jupyterbook.org/en/stable/intro.html
+      title: Jupyter Book Doc
+    - url: https://myst-nb.readthedocs.io/en/latest/index.html
+      title: MyST-NB Doc
+    - url: https://opencomputinglab.github.io/SubjectMatterNotebooks/intro.html
+      title: Jupter Useful Plugins

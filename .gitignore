@@ -1,0 +1,8 @@
+*.pyc
+dist/
+site/
+.python-version
+
+.DS_Store
+_build/
+_static/
