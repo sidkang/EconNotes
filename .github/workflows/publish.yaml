@@ -18,6 +18,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Install package
+      run: |
+        sudo apt-get -y install texlive texlive-pictures imagemagick
+
     # Install dependencies
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
