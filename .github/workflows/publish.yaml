@@ -18,9 +18,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Install TEX package
+    - name: Install shpinx-tikz dependencies
       run: |
-        sudo apt-get -y install texlive texlive-xetex texlive-pictures poppler-utils imagemagick
+        sudo apt-get -y install texlive texlive-xetex texlive-pictures poppler-utils pnmtopng imagemagick ghostscript
 
     # Install dependencies
     - name: Set up Python 3.8
