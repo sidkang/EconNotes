@@ -18,15 +18,19 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Install package
+    - name: Install TEX package
       run: |
-        sudo apt-get -y install texlive texlive-pictures imagemagick
+        sudo apt-get -y install texlive texlive-xetex texlive-pictures imagemagick
 
     # Install dependencies
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
         python-version: 3.9.x
+
+    - name: Update pip & wheel
+      run: |
+        pip install -U pip wheel
 
     - name: Install dependencies
       run: |
