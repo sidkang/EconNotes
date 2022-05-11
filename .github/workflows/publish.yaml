@@ -20,7 +20,7 @@ jobs:
 
     - name: Install TEX package
       run: |
-        sudo apt-get -y install texlive texlive-xetex texlive-pictures imagemagick
+        sudo apt-get -y install texlive texlive-xetex texlive-pictures poppler-utils imagemagick
 
     # Install dependencies
     - name: Set up Python 3.8
