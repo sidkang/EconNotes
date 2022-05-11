@@ -1,0 +1,4 @@
+# EconNotes
+
+```{tableofcontents}
+```
