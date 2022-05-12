@@ -5,7 +5,7 @@ format: jb-book
 root: intro
 parts:
   - caption: 宏观经济学二十五讲
-    numbered: 3
+    # numbered: 3
     chapters:
     - file: note/macro-25/ch00.md
     - file: note/macro-25/ch01.md
@@ -17,8 +17,7 @@ parts:
   - caption: Syntax Reference
     chapters:
     - file: markdown.md
-    - file: notebooks.ipynb
-    - file: markdown-notebooks
+    - file: markdown-notebooks.md
     - url: https://jupyterbook.org/en/stable/intro.html
       title: Jupyter Book Doc
     - url: https://myst-nb.readthedocs.io/en/latest/index.html
