@@ -27,7 +27,7 @@ jobs:
       run: |
         curl -o plantuml.jar -L https://github.com/plantuml/plantuml/releases/download/v1.2022.5/plantuml-1.2022.5.jar
         mv plantuml.jar /opt/plantuml.jar
-        surl -o plantuml-jlatexmath.zip -L https://www.dropbox.com/s/ameybtbiqaszfs3/plantuml-jlatexmath.zip?dl=1
+        curl -o plantuml-jlatexmath.zip -L https://www.dropbox.com/s/ameybtbiqaszfs3/plantuml-jlatexmath.zip?dl=1
         unzip plantuml-jlatexmath.zip -d /opt
         echo $'#!/bin/sh -e\njava -jar /opt/plantuml.jar ${@}' >> "/usr/local/bin/plantuml"
         sudo chmod +x /usr/local/bin/plantuml
