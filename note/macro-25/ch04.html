@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>5. 发展战略与经济绩效 &#8212; EconNotes</title>
+    <title>发展战略与经济绩效 &#8212; EconNotes</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -28,6 +28,8 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/base.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
@@ -44,6 +46,40 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "sidkang/EconNotes");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -56,8 +92,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="6. CH05" href="ch05.html" />
-    <link rel="prev" title="4. 中国经济增长的供给面分析" href="ch03.html" />
+    <link rel="next" title="均衡宏观经济学方法论" href="ch05-06.html" />
+    <link rel="prev" title="中国经济增长的供给面分析" href="ch03.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -104,32 +140,32 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="ch00.html">
-   1. 课程介绍
+   课程介绍
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="ch01.html">
-   2. 有关中国经济的关键问题
+   有关中国经济的关键问题
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="ch02.html">
-   3. 通过GDP认识中国经济
+   通过GDP认识中国经济
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="ch03.html">
-   4. 中国经济增长的供给面分析
+   中国经济增长的供给面分析
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   5. 发展战略与经济绩效
+   发展战略与经济绩效
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="ch05.html">
-   6. CH05
+  <a class="reference internal" href="ch05-06.html">
+   均衡宏观经济学方法论
   </a>
  </li>
 </ul>
@@ -142,11 +178,6 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../../markdown.html">
    Markdown Files
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../notebooks.html">
-   Content with notebooks
   </a>
  </li>
  <li class="toctree-l1">
@@ -254,7 +285,7 @@ const thebe_selector_output = ".output, .cell_output"
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1><span class="section-number">5. </span>发展战略与经济绩效<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>发展战略与经济绩效<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 </div>
 
     <script type="text/x-thebe-config">
@@ -286,13 +317,13 @@ const thebe_selector_output = ".output, .cell_output"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">4. </span>中国经济增长的供给面分析</p>
+            <p class="prev-next-title">中国经济增长的供给面分析</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="ch05.html" title="next page">
+    <a class='right-next' id="next-link" href="ch05-06.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">6. </span>CH05</p>
+        <p class="prev-next-title">均衡宏观经济学方法论</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

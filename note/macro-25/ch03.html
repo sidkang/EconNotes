@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>4. 中国经济增长的供给面分析 &#8212; EconNotes</title>
+    <title>中国经济增长的供给面分析 &#8212; EconNotes</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -28,6 +28,8 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/base.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
@@ -44,6 +46,40 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "sidkang/EconNotes");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -58,8 +94,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="5. 发展战略与经济绩效" href="ch04.html" />
-    <link rel="prev" title="3. 通过GDP认识中国经济" href="ch02.html" />
+    <link rel="next" title="发展战略与经济绩效" href="ch04.html" />
+    <link rel="prev" title="通过GDP认识中国经济" href="ch02.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -106,32 +142,32 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="ch00.html">
-   1. 课程介绍
+   课程介绍
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="ch01.html">
-   2. 有关中国经济的关键问题
+   有关中国经济的关键问题
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="ch02.html">
-   3. 通过GDP认识中国经济
+   通过GDP认识中国经济
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   4. 中国经济增长的供给面分析
+   中国经济增长的供给面分析
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="ch04.html">
-   5. 发展战略与经济绩效
+   发展战略与经济绩效
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="ch05.html">
-   6. CH05
+  <a class="reference internal" href="ch05-06.html">
+   均衡宏观经济学方法论
   </a>
  </li>
 </ul>
@@ -144,11 +180,6 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../../markdown.html">
    Markdown Files
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../notebooks.html">
-   Content with notebooks
   </a>
  </li>
  <li class="toctree-l1">
@@ -244,27 +275,27 @@ const thebe_selector_output = ".output, .cell_output"
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   4.1. 供给与需求
+   供给与需求
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id3">
-   4.2. 生产函数
+   生产函数
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id5">
-   4.3. 增长计量
+   增长计量
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#solow-model">
-   4.4. 索洛增长模型(Solow Model)
+   索洛增长模型(Solow Model)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id6">
-   4.5. 对中国经济增长的数量分析
+   对中国经济增长的数量分析
   </a>
  </li>
 </ul>
@@ -289,27 +320,27 @@ const thebe_selector_output = ".output, .cell_output"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   4.1. 供给与需求
+   供给与需求
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id3">
-   4.2. 生产函数
+   生产函数
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id5">
-   4.3. 增长计量
+   增长计量
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#solow-model">
-   4.4. 索洛增长模型(Solow Model)
+   索洛增长模型(Solow Model)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id6">
-   4.5. 对中国经济增长的数量分析
+   对中国经济增长的数量分析
   </a>
  </li>
 </ul>
@@ -322,26 +353,26 @@ const thebe_selector_output = ".output, .cell_output"
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1><span class="section-number">4. </span>中国经济增长的供给面分析<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>中国经济增长的供给面分析<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id2">
-<h2><span class="section-number">4.1. </span>供给与需求<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>供给与需求<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="id3">
-<h2><span class="section-number">4.2. </span>生产函数<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2>生产函数<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>规模报酬不变<a class="footnote-reference brackets" href="#id7" id="id4">1</a></p>
 </div>
 <div class="section" id="id5">
-<h2><span class="section-number">4.3. </span>增长计量<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<h2>增长计量<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <div class="math notranslate nohighlight">
 \[
 Y_t = A_tK_t^{\alpha}L_t^{1 - \alpha}
 \]</div>
 </div>
 <div class="section" id="solow-model">
-<h2><span class="section-number">4.4. </span>索洛增长模型(Solow Model)<a class="headerlink" href="#solow-model" title="Permalink to this headline">¶</a></h2>
+<h2>索洛增长模型(Solow Model)<a class="headerlink" href="#solow-model" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="id6">
-<h2><span class="section-number">4.5. </span>对中国经济增长的数量分析<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<h2>对中国经济增长的数量分析<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <p>人口红利?</p>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
@@ -381,13 +412,13 @@ Y_t = A_tK_t^{\alpha}L_t^{1 - \alpha}
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">3. </span>通过GDP认识中国经济</p>
+            <p class="prev-next-title">通过GDP认识中国经济</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="ch04.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">5. </span>发展战略与经济绩效</p>
+        <p class="prev-next-title">发展战略与经济绩效</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
