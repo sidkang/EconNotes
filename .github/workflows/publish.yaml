@@ -18,9 +18,21 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: setup java
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'zulu'
+        java-version: '11'
+    - name: download, validate, install plantuml and its dependencies
+      run: |
+        curl -o plantuml.jar -L https://github.com/plantuml/plantuml/releases/download/v1.2022.5/plantuml-1.2022.5.jar
+        mv plantuml.jar /opt/plantuml.jar
+        echo $'#!/bin/sh -e\njava -jar /opt/plantuml.jar ${@}' >> "/usr/local/bin/plantuml"
+        sudo chmod +x /usr/local/bin/plantuml
+
     - name: Install shpinx-tikz dependencies
       run: |
-        sudo apt-get -y install texlive texlive-xetex texlive-pictures poppler-utils pnmtopng imagemagick ghostscript
+        sudo apt-get -y install texlive texlive-xetex texlive-pictures poppler-utils pnmtopng imagemagick ghostscript graphviz
 
     # Install dependencies
     - name: Set up Python 3.8

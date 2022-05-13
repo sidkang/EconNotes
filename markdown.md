@@ -50,6 +50,7 @@ Here is an inline directive to refer to a document: {doc}`markdown-notebooks`.
 
 +++
 
+
 ## Learn more
 
 This is just a simple starter to get you started.
@@ -171,3 +172,4 @@ table {%
 \end{axis}
 
 ```
+
