@@ -4,6 +4,7 @@ numpy
 
 # add-ons
 sphinx-proof
+sphinx-exercise
 sphinxcontrib-mermaid
 sphinxcontrib-tikz
 
