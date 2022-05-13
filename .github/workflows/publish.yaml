@@ -18,7 +18,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: setup java
+    - name: setup java & plantuml
       uses: actions/setup-java@v2
       with:
         distribution: 'zulu'
