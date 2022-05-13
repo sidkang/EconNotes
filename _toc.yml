@@ -12,7 +12,7 @@ parts:
     - file: note/macro-25/ch02.md
     - file: note/macro-25/ch03.md
     - file: note/macro-25/ch04.md
-    - file: note/macro-25/ch05.md
+    - file: note/macro-25/ch05-06.md
 
   - caption: Syntax Reference
     chapters:

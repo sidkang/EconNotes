@@ -3,5 +3,10 @@ matplotlib
 numpy
 
 # add-ons
+sphinx-proof
 sphinxcontrib-mermaid
 sphinxcontrib-tikz
+
+# others
+pandas
+matplotlib

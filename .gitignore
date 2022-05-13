@@ -2,6 +2,7 @@
 dist/
 site/
 .python-version
-
+.ipynb_checkpoints/
+__pycache__/
 .DS_Store
 _build/

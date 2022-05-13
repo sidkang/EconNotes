@@ -1,3 +1,8 @@
 .container, .container-lg, .container-md, .container-sm, .container-xl {
   max-width: 1600px;
 }
+
+/* 将代码字体大小与普通文字保持一致 */
+code {
+  font-size: 100% !important;
+}

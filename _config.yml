@@ -50,11 +50,16 @@ html:
   use_issues_button: false
   use_repository_button: false
   use_multitoc_numbering: false
+  comments:
+    utterances:
+      repo: "sidkang/EconNotes"
 
 #######################################################################################
 # Advanced and power-user settings
 sphinx:
   extra_extensions:
+    - sphinx_proof
+    - sphinx_exercise
     - sphinxcontrib.mermaid
     - sphinxcontrib.tikz
   local_extensions          :   # A list of local extensions to load by sphinx specified by "name: path" items
