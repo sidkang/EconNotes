@@ -88,6 +88,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -303,51 +305,90 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id3">
-   拉姆齐模型(仅居民)
+   拉姆齐模型(仅居民积累资本)
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     模型基础设定
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     居民决策
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     企业决策
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     一般均衡
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id4">
-   拉姆齐模型(仅企业)
+  <a class="reference internal nav-link" href="#id8">
+   拉姆齐模型(仅企业积累资本)
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     居民决策
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     企业决策
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     一般均衡
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id5">
+  <a class="reference internal nav-link" href="#id12">
    模型求解的三点技术注释
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id6">
+  <a class="reference internal nav-link" href="#id13">
    拉姆齐模型(居民与企业)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id7">
+  <a class="reference internal nav-link" href="#id14">
    对储蓄的分析
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id8">
+  <a class="reference internal nav-link" href="#id15">
    现实中消费与储蓄如何决定
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id9">
+  <a class="reference internal nav-link" href="#id16">
    再论萨伊定律
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id10">
+  <a class="reference internal nav-link" href="#id17">
    中国消费和储蓄的基本事实
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id11">
+  <a class="reference internal nav-link" href="#id18">
    模型与中国经济的数量分析
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id12">
+  <a class="reference internal nav-link" href="#id19">
    课后练习
   </a>
  </li>
@@ -378,51 +419,90 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id3">
-   拉姆齐模型(仅居民)
+   拉姆齐模型(仅居民积累资本)
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     模型基础设定
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     居民决策
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     企业决策
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     一般均衡
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id4">
-   拉姆齐模型(仅企业)
+  <a class="reference internal nav-link" href="#id8">
+   拉姆齐模型(仅企业积累资本)
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     居民决策
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     企业决策
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     一般均衡
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id5">
+  <a class="reference internal nav-link" href="#id12">
    模型求解的三点技术注释
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id6">
+  <a class="reference internal nav-link" href="#id13">
    拉姆齐模型(居民与企业)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id7">
+  <a class="reference internal nav-link" href="#id14">
    对储蓄的分析
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id8">
+  <a class="reference internal nav-link" href="#id15">
    现实中消费与储蓄如何决定
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id9">
+  <a class="reference internal nav-link" href="#id16">
    再论萨伊定律
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id10">
+  <a class="reference internal nav-link" href="#id17">
    中国消费和储蓄的基本事实
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id11">
+  <a class="reference internal nav-link" href="#id18">
    模型与中国经济的数量分析
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id12">
+  <a class="reference internal nav-link" href="#id19">
    课后练习
   </a>
  </li>
@@ -439,55 +519,316 @@ const thebe_selector_output = ".output, .cell_output"
 <h1>消费、储蓄与中国的消费不足<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id2">
 <h2>储蓄的基本概念<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\text{储蓄} &amp; \equiv \text{收入 $-$ 消费} \\
+\text{国民总储蓄} &amp; = \text{GDP $-$ 国民总消费 $=$ GDP $-$ C $-$ G} \\
+\text{居民储蓄} &amp; = \text{居民收入 $-$ 居民消费} \\
+\text{政府储蓄} &amp; = \text{政府收入 $-$ 政府消费} \\
+\text{企业储蓄} &amp; = \text{企业收入 $-$ 企业储蓄 $=$ 企业收入}
+\end{align*}
+\end{split}\]</div>
+<div class="dropdown admonition tip">
+<p class="admonition-title">Tip</p>
+<p>!todo</p>
+</div>
 </div>
 <div class="section" id="id3">
-<h2>拉姆齐模型(仅居民)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p class="plantuml">
-<img src="../../_images/plantuml-89c63a7ec6e3eca5c9283d168f9f7b12e1753709.png" alt="&#64;startuml
-skinparam defaultTextAlignment center
-participant Consumer as con
-participant Corp as corp
-group Period 1
- [-&gt; con: &lt;math&gt;L, k_0&lt;/math&gt;
- con -&gt; corp: &lt;math&gt;L,k_0&lt;/math&gt;
- corp -&gt; con: &lt;math&gt;w_1L,(1+r_1)k_0&lt;/math&gt;
- [&lt;- con: &lt;math&gt;c_1&lt;/math&gt;
-end
-group Period 2
-[-&gt; con: &lt;math&gt;L, k_1&lt;/math&gt;
-con -&gt; corp: &lt;math&gt;L,k_1&lt;/math&gt;
-corp -&gt; con: &lt;math&gt;w_2L,(1+r_2)k_1&lt;/math&gt;
-[&lt;- con: &lt;math&gt;c_2&lt;/math&gt;
-end
-&#64;enduml"/>
-</p>
+<h2>拉姆齐模型(仅居民积累资本)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+</div>
 </div>
 <div class="section" id="id4">
-<h2>拉姆齐模型(仅企业)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h3>模型基础设定<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>两期限模型(two period model)</p></li>
+<li><p>资本折旧率为0</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>内生变量总体可以分为两大类：</p>
+<ul class="simple">
+<li><p><strong>控制变量(control variable)</strong>，这类取值在当期决定</p></li>
+<li><p><strong>前定变量(pre-determined variable)</strong>，这类取值在上一期被决定,也被称为<strong>状态变量(state variable)</strong>—-时间下标根据类型而定</p></li>
+</ul>
+</div>
 </div>
 <div class="section" id="id5">
-<h2>模型求解的三点技术注释<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<h3>居民决策<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>经济增长的目标是什么，或者什么是评价经济增长的标准</p>
+<ul class="simple">
+<li><p>~~追求更高的人均产出（人均GDP）—-(Solow模型)~~</p></li>
+<li><p>提升居民的福利，也就是提升居民的效用</p></li>
+</ul>
+<p>考虑到模型为两期模型，第二期结束后消费者将消费完所有资源，所以居民的效用偏好函数可以表示为</p>
+<div class="math notranslate nohighlight">
+\[
+U = u(c_1)+\beta u(c_2)
+\]</div>
+<p>其中， <span class="math notranslate nohighlight">\(0&lt;\beta&lt;1\)</span>，<span class="math notranslate nohighlight">\(\beta\)</span>为居民的主观贴现因子，说明对于同1单位的消费，今天的消费相比未来的消费可以提升带来更高的效用</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\text{预算约束}
+\begin{cases}
+c_1 + k_1 &amp; \le k_0 + w_1L + (1+r_1)k_0 &amp; \text{第1期} \\
+c_2 &amp; \le k_1 + w_2L + (1+r_2)k_1 &amp; \text{第2期}
+\end{cases}
+\end{split}\]</div>
+<p>当效用最大化时，两个预算约束条件一定为等式，则可以写成</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\max_{c_1,c_2,k_1} u(c_1) + &amp; \beta u(c_2) \\
+\text{s.t.} \quad c_1 + k_1 &amp; = k_0 + w_1L + (1+r_1)k_0 \\
+c_2 \qquad &amp; = k_1 + w_2L + (1+r_2)k_1 \\
+\end{align*}
+\end{split}\]</div>
+<p>设置拉格朗日函数</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{L} = u(c_1) + \beta u(c_2) + \lambda_1[k_0+w_1L+(1+r_1)k_0-c_1-k_1]+\lambda_2[k_1+w_2L+(1+r_2)k_1-c_2]
+\]</div>
+<p>对于各内生变量，分别求一阶导后</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\frac{\partial \mathcal{L}}{\partial c_1} = 0 \Rightarrow &amp; u'(c_1) = \lambda_1 \\
+\frac{\partial \mathcal{L}}{\partial c_2} = 0 \Rightarrow &amp; \beta u'(c_2) = \Lambda_2 \\
+\frac{\partial \mathcal{L}}{\partial k_1} = 0 \Rightarrow &amp; \lambda_1 = \lambda_2(1+r_2)
+\end{align*}
+\end{split}\]</div>
+<p>将拉格朗日乘子消去后得到下式，也可称作<code class="docutils literal notranslate"><span class="pre">欧拉方程(Euler</span> <span class="pre">Function)</span></code></p>
+<div class="math notranslate nohighlight" id="equation-eular-equation">
+<span class="eqno">(4)<a class="headerlink" href="#equation-eular-equation" title="Permalink to this equation">¶</a></span>\[
+u'(c_1) = u'(c_2)(1+r_2)
+\]</div>
+<p>综上，可以看出欧拉方程是居民消费和储蓄的决策方程。居民的消费储蓄决定于两个要素：</p>
+<ol class="simple">
+<li><p>居民两期之间的效用比 <span class="math notranslate nohighlight">\(u'(c_1)/\beta u'(c_2)\)</span></p></li>
+<li><p>储蓄/资本回报率 <span class="math notranslate nohighlight">\(r_2\)</span></p></li>
+</ol>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="figure align-default" id="id20">
+<div class="cell_output docutils container">
+<div class="output text_html"><img src="http://www.plantuml.com/plantuml/png/TP4zRy8m48Rt-nNNhQWWiDMfYX28bQ43MuReb5p1mdQiYwFoy-iOYam_bfFzlezFZsJO394aZix2KponOmoMZ8VXR7mW8OTTCAXVLsN27pJQUE1Bt5fpz8vzn3OD5e24HDEQG2dRzNuO7GlIW6tlVtGIhha4E4e_1dndCNs72h1UhAS7RrXPYdnPx-TuRbRLydg3gSECI4YCetXAI2Ro6NA3zoKv_6pKVlwiNgHHinAjgqM9jOtwhjXtZsOQwiUTsUlE_sDLz7z8wPkKdXNaBoTTEctIc3xi2m=="/></div></div>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">时序图</span><a class="headerlink" href="#id20" title="Permalink to this image">¶</a></p>
+</div>
+</div>
 </div>
 <div class="section" id="id6">
-<h2>拉姆齐模型(居民与企业)<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<h3>企业决策<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>由于企业在每期末均进行清算，不进行资本或利润的留存，所以所有储蓄均在消费者处。即，企业每一期的最优化问题可以表达为</p>
+<div class="math notranslate nohighlight">
+\[
+\max_{k_{t-1}^d,l_t^d}AF[(k_{t-1}^d,l_t^d) - r_tk_{t-1}^d - w_tl_1^d] \qquad t=1,2
+\]</div>
+<p>一阶条件分别为</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+AF_{k_{t-1}^d}(k_{t-1}^d,l_t^d)=r_t \\
+AF_{l_1^d}(k_{t-1}^d,l_t^d)=w_t
+\end{split}\]</div>
 </div>
 <div class="section" id="id7">
-<h2>对储蓄的分析<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<h3>一般均衡<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>要达到<code class="docutils literal notranslate"><span class="pre">市场出清(market</span> <span class="pre">clear)</span></code>的情况下，需要以下条件达成</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+l_1^d &amp; =l_2^d=L \\
+k_o^d &amp; = k_0 \\
+k_1^d &amp; = k_1
+\end{align*}
+\end{split}\]</div>
+<p>将其带入消费者的跨期欧拉方程 <a class="reference internal" href="#equation-eular-equation">(4)</a>、以及消费者的预算约束集后，可以得到</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+u'(c_1) \quad &amp; = \beta u'(c_2)[1 + AF_{k_1}(k_1,L)] \\[3ex]
+c_1 + k_1 &amp; = AF(k_0,L) + k_0 \\
+c_2 \qquad &amp; = AF(k_1, L) + k_1
+\end{align*}
+\end{split}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>通过模型可知，消费者最优效用由<code class="docutils literal notranslate"><span class="pre">消费者的主观偏好</span></code>以及<code class="docutils literal notranslate"><span class="pre">客观世界所能提供的资本回报率</span></code>同时决定。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>该模型相比于现实存在两个显著的缺陷</p>
+<ol class="simple">
+<li><p>在此模型中，所有的储蓄决策都由消费者做出，模型中企业并未参与。而现实中企业是重要的储蓄/投资的参与者，绝大多数的居民储蓄需要靠企业储蓄转化为投资；同时，企业在每期结束后均会结业清盘，意味着企业只会存活1期，显然也不符合现实情形</p></li>
+<li><p>消费者的<code class="docutils literal notranslate"><span class="pre">主观偏好</span></code>无法预测、度量，那么如何应用于现实呢？</p></li>
+</ol>
+</div>
+</div>
 </div>
 <div class="section" id="id8">
-<h2>现实中消费与储蓄如何决定<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<h2>拉姆齐模型(仅企业积累资本)<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
 </div>
+</div>
+<p>相比之前的模型设定，本此模型中，我们假设模型对应一个私有制社会—-<code class="docutils literal notranslate"><span class="pre">企业为居民所拥有，其股份由居民所持有</span></code>
+具体会有以下的一些不同，可以通过时序图1和时序图2看出:</p>
+<ol class="simple">
+<li><p>居民<strong>不再拥有</strong>储蓄/资本 <span class="math notranslate nohighlight">\(k_t\)</span> ，所以居民也就<strong>无法</strong>通过向企业借出储蓄/资本以获得的资本回报 <span class="math notranslate nohighlight">\(r_tk_{t-1}\)</span></p></li>
+<li><p>居民<strong>拥有</strong>企业的股份 <span class="math notranslate nohighlight">\(s_t\)</span></p>
+<ul class="simple">
+<li><p>居民所持有的股份的价值是 <span class="math notranslate nohighlight">\(v_ts_{t-1}\)</span> (<span class="math notranslate nohighlight">\(v_t\)</span>为股票价值)</p></li>
+<li><p>也就意味着居民可以从企业收到所持股份的分红 <span class="math notranslate nohighlight">\(d_ts_{t-1}\)</span></p></li>
+</ul>
+</li>
+</ol>
+<p>其他假设条件：</p>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">待补充</span></code></p></li>
+</ol>
 <div class="section" id="id9">
-<h2>再论萨伊定律<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<h3>居民决策<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>第2期中，由于2期末世界毁灭😀，居民所持有的股份价值变为0</p>
+</div>
+</div>
+<p>居民效用函数仍然维持 <span class="math notranslate nohighlight">\(u(c_1)+ \beta u(c_2)\)</span> 这样的形式，约束方面则变为</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\text{预算约束}
+\begin{cases}
+c_1 + v_1s_1 &amp; \le w_1L + (v_1+d_1)s_0 &amp; \text{第1期} \\
+c_2 &amp; \le w_2L + d_2s_1 &amp; \text{第2期}
+\end{cases}
+\end{split}\]</div>
+<p>将以上结合起来，居民的效用最优化问题可以写作</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\max_{c_1,c_2,S_1} u(c_1)  + \beta u(c_2) &amp; \\
+\text{s.t.} \quad \quad
+c_1 + v_1s_1 &amp; = w_1L + (v_1+d_1)s_0 \\
+c_2 \qquad \quad &amp; = w_2L + d_2s_1
+\end{align*}
+\end{split}\]</div>
+<p>设置拉格朗日函数</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{L} = u(c_1) + \beta u(c_2) - \lambda_1[w_1L + (v_1+d_1)s_0 - c_1 - v_1s_1] - \lambda_2[w_2L + d_2s_1 - c_2]
+\]</div>
+<p>求得一阶导可得</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\frac{\partial \mathcal{L}}{\partial c_1} = 0 \Rightarrow &amp; u'(c_1) = \lambda_1 \\
+\frac{\partial \mathcal{L}}{\partial c_2} = 0 \Rightarrow &amp; \beta u'(c_2) = \Lambda_2 \\
+\frac{\partial \mathcal{L}}{\partial S_1} = 0 \Rightarrow &amp; \lambda_1v_1 = \lambda_2d_2
+\end{align*}
+\end{split}\]</div>
+<p>将拉格朗日乘子消去后得到下式</p>
+<div class="math notranslate nohighlight" id="equation-ramsy-model-only-corp-asset-pricing-equation">
+<span class="eqno">(5)<a class="headerlink" href="#equation-ramsy-model-only-corp-asset-pricing-equation" title="Permalink to this equation">¶</a></span>\[
+v_1 = \beta \frac{u'(c_2)}{u'(c_1)}d_2
+\]</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>从<a class="reference internal" href="#equation-ramsy-model-only-corp-asset-pricing-equation">(5)</a>可知，资产的价值来自于资产未来可以向所有者提供的现金流</p>
+<p>其中，<span class="math notranslate nohighlight">\(\beta u'(c_2)/u'(c_1)\)</span> 被称为<code class="docutils literal notranslate"><span class="pre">随机贴现因子(stochastic</span> <span class="pre">discount</span> <span class="pre">factor)</span></code>，包含了跨期边际效用比</p>
+<ul class="simple">
+<li><p>居民主观偏好无法观测，所以该因子无法观测</p></li>
+<li><p>但同时方程也说明主观偏好可以通过资产价格反推得到</p></li>
+</ul>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="figure align-default" id="id21">
+<div class="cell_output docutils container">
+<div class="output text_html"><img src="http://www.plantuml.com/plantuml/png/bP91QyCm38Nl_XNgPQU5Dc6d4KBBhZqCjbiPGIHQQX8xHf5PsQ-Vux3CtQ2mYupVUvByWTL-4cJnPb0RnzWP1A7n4uGzgOsSoH2u0RLLKw-jGqO3hTDGFEnIXTxH3_9A5paCkhE6h40J2h5I8IAwqGw3zZJQoHjYm0cQqVxos2qwEzNnw1qy4-knXLoTichEFq8veD2bEjx3IxqhjyjDtSKcABEtDT4dTkY4E81Ty0tAkJgMstYgsBXEZzf7dT-ospgFkvV0gSnIiwdpRuTiUurH91ZB8sQADNy54QN-n_mtGd4ReKWM_q4eKeHzAFFt-08="/></div></div>
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">时序图</span><a class="headerlink" href="#id21" title="Permalink to this image">¶</a></p>
+</div>
+</div>
 </div>
 <div class="section" id="id10">
-<h2>中国消费和储蓄的基本事实<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<h3>企业决策<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>对于企业，在第2期中，因为第2期后世界毁灭，所以股权价值归为0，消费者为了提升效用将会尽量更多消费，所以消费者将会要求公司将所有资产在支付劳动后，将分红全部给予消费者</p>
+<p>其次，对于第1期，企业应该以分红最多为目标，即转化为企业的目标是<code class="docutils literal notranslate"><span class="pre">在分红前将企业股票价值最大化为目标</span></code>，可以记为 <span class="math notranslate nohighlight">\(d_1 + v_1\)</span> ，如果企业不这么做，那么消费者作为股东会将管理层下岗，或者其他消费者可能会发起敌意并购再炒掉管理层</p>
+<p>同时可以参考居民在第1期中的预算约束</p>
+<div class="math notranslate nohighlight">
+\[
+c_1 + v_1s_1 \le w_1L + (\color{brown}v_1+d_1 \color{black})s_0
+\]</div>
+<p>其中，居民的预算约束显然受限于企业的分红前股价，为了使居民效用最大化，企业也应该最大化居民的预算约束，即 <span class="math notranslate nohighlight">\(v_1 + d_1\)</span> ，同时，带入<a class="reference internal" href="#equation-ramsy-model-only-corp-asset-pricing-equation">(5)</a>后，可得</p>
+<div class="math notranslate nohighlight">
+\[
+d_1 + v_1 = d_1 + \beta \frac{u'(c_2)}{u'(c_1)} d_2
+\]</div>
+<p>所以，企业的最优化问题可以写为</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\max_{l_1^d, l_2^d, d_1, d_2, k_1} d_1 + \beta &amp; \frac{u'(c_2)}{u'(c_1)} d_2 \\
+\text{s.t.} \quad \quad
+d_1 + k_1 &amp; \le AF(k_0, l_1^d) - w_1l_1^d + k_0 \\
+d_2 \qquad &amp; \le AF(k_1, l_2^d) - w_2l_2^d + k1
+\end{align*}
+\end{split}\]</div>
+<p>在最优时，约束条件应该是等号，带回最优化目标后，可得</p>
+<div class="math notranslate nohighlight">
+\[
+\max_{l_1^d, l_2^d, k_1} AF(k_0, l_1^d) - w_1l_1^d + k_0 - k_1 + \beta \frac{u'(c_2)}{u'(c_1)} [AF(k_1, l_2^d) - w_2l_2^d + k_1]
+\]</div>
+<p>求一阶导，可得</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\frac{\partial F}{\partial l_1^d} = 0 &amp; \Rightarrow AF_{l_1^d}(k_0, l_1^d) = w_1 \\
+\frac{\partial F}{\partial l_2^d} = 0 &amp; \Rightarrow AF_{l_2^d}(k_1, l_2^d) = w_2 \\
+\frac{\partial F}{\partial k_1} = 0 &amp; \Rightarrow \beta \frac{u'(c_2)}{u'(c_1)} [AF_{k_1}(k_1, l_2^d) + 1] = 1
+\end{align*}
+\end{split}\]</div>
 </div>
 <div class="section" id="id11">
-<h2>模型与中国经济的数量分析<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<h3>一般均衡<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>在均衡时，可知有条件 <span class="math notranslate nohighlight">\( l_1^d = l_2^d = L, s_1 = s_0 = 1 \)</span>, 上式可简化为</p>
+<div class="math notranslate nohighlight">
+\[
+u'(c_1) = \beta u'(c_2)[AF_{k_1}(k_1, L) + 1]
+\]</div>
+<p>对比拉姆齐模型（仅居民积累资本）中的均衡条件，完全相同。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">刺穿企业帷幕(piercing</span> <span class="pre">the</span> <span class="pre">corporate</span> <span class="pre">veil)</span></code></p>
+<p>以上模型说明，在居民拥有企业股权时，居民储蓄或企业储蓄效果相同，股票价格由居民决定，股票价值最大化，同时也意味着居民效用最大化，故<code class="docutils literal notranslate"><span class="pre">居民与企业两部门之间的收入分配变化不影响居民的消费与储蓄决策</span></code></p>
+</div>
+</div>
 </div>
 <div class="section" id="id12">
-<h2>课后练习<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<h2>模型求解的三点技术注释<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id13">
+<h2>拉姆齐模型(居民与企业)<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id14">
+<h2>对储蓄的分析<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id15">
+<h2>现实中消费与储蓄如何决定<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id16">
+<h2>再论萨伊定律<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id17">
+<h2>中国消费和储蓄的基本事实<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id18">
+<h2>模型与中国经济的数量分析<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id19">
+<h2>课后练习<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
