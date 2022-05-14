@@ -9,7 +9,9 @@ sphinxcontrib-kroki
 sphinxcontrib-plantuml
 sphinxcontrib-mermaid
 sphinxcontrib-tikz
+# sphinxemoji
 
 # others
 pandas
+plantuml
 matplotlib
