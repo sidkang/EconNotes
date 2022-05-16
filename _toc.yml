@@ -15,9 +15,10 @@ parts:
     - file: note/macro-25/ch05-06.md
     - file: note/macro-25/ch07-08.md
 
-  - caption: Syntax Reference
+  - caption: About Site
     chapters:
     - file: CHANGELOG.md
+
   - caption: Syntax Reference
     chapters:
     - url: https://jupyterbook.org/en/stable/intro.html
