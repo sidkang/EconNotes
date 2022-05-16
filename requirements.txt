@@ -4,7 +4,6 @@ numpy
 
 # add-ons
 sphinx-proof
-sphinx-exercise
 sphinxcontrib-kroki
 sphinxcontrib-plantuml
 sphinxcontrib-mermaid
@@ -13,5 +12,6 @@ sphinxcontrib-tikz
 
 # others
 pandas
+scipy
 plantuml
 matplotlib

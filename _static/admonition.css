@@ -1,0 +1,21 @@
+.admonition-exercise {
+  border-left-color: rgba(0, 246, 16, 1);
+}
+.admonition.exercise .admonition-title {
+  background-color: rgba(0, 246, 16, .1);
+}
+.admonition.exercise .admonition-title:before {
+  color: rgba(0, 246, 16, 1);
+  content: '\f07c';
+}
+
+.admonition-solution {
+  border-left-color: rgba(0, 246, 236, 1);
+}
+.admonition.solution .admonition-title {
+  background-color: rgba(0, 246, 236, .1);
+}
+.admonition.solution .admonition-title:before {
+  color: rgba(0, 246, 236, 1);
+  content: '\f039';
+}

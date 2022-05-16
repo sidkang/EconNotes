@@ -3,7 +3,7 @@
 
 title: EconNotes
 author: SID
-# logo: logo.png
+logo: note/assets/icon-drafting-compass-solid.svg
 only_build_toc_files: true
 
 # Force re-execution of notebooks on each build.
@@ -60,7 +60,6 @@ html:
 sphinx:
   extra_extensions:
     - sphinx_proof
-    - sphinx_exercise
     - sphinxcontrib.mermaid
     - sphinxcontrib.tikz
     - sphinxcontrib.kroki
