@@ -17,8 +17,9 @@ parts:
 
   - caption: Syntax Reference
     chapters:
-    - file: markdown.md
-    - file: markdown-notebooks.md
+    - file: CHANGELOG.md
+  - caption: Syntax Reference
+    chapters:
     - url: https://jupyterbook.org/en/stable/intro.html
       title: Jupyter Book Doc
     - url: https://myst-nb.readthedocs.io/en/latest/index.html
