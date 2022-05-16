@@ -48,9 +48,13 @@ repository:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
+  favicon: "note/assets/icon-drafting-compass-solid.svg"
   use_issues_button: false
-  use_repository_button: false
+  use_repository_button: true
   use_multitoc_numbering: false
+  home_page_in_navbar: false
+  extra_navbar: |
+    Huge Thanks to the<br> <a href="https://jupyterbook.org">Jupyter Book Project</a> ❤️❤️❤️
   comments:
     utterances:
       repo: "sidkang/EconNotes"
