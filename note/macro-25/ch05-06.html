@@ -29,8 +29,8 @@
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/admonition.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -94,7 +94,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="消费、储蓄与中国的消费不足" href="ch07-09.html" />
+    <link rel="next" title="消费与储蓄的决定" href="ch07-08.html" />
     <link rel="prev" title="发展战略与经济绩效" href="ch04.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -117,6 +117,11 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/icon-drafting-compass-solid.svg" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">EconNotes</h1>
@@ -171,8 +176,8 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="ch07-09.html">
-   消费、储蓄与中国的消费不足
+  <a class="reference internal" href="ch07-08.html">
+   消费与储蓄的决定
   </a>
  </li>
 </ul>
@@ -550,33 +555,22 @@ Reality --&gt; a1[Rational Human Minds] --&gt; a2[Rational Human Behaviors] --&g
 </div>
 <div class="section" id="id11">
 <h2>课后练习<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
-<div class="exercise admonition" id="ex1">
-
-<p class="admonition-title"><span class="caption-number">Exercise 1 </span></p>
-<div class="section" id="exercise-content">
+<div class="exercise admonition">
+<p class="admonition-title">exercise</p>
 <p>“卢卡斯批判”说的是，建立在人的行为之上的统计关系是不稳定的，会因为人行为方式的改变而改变（比如菲利普斯曲线的消失）。因此，我们要从人的偏好、人的理性出发来进行经济分析。</p>
 <p>但如果人的偏好会随着时间的变化而变化呢？比如，人在经济繁莱时更偏好闲暇，在经济衰退时更偏好消费。基于这种可变化的偏好而形成的统计关系是稳定的吗？还会继续受到卢卡斯的批评吗？为什么？</p>
 </div>
-</div>
-<div class="solution dropdown admonition" id="note/macro-25/ch05-06-solution-2">
-
-<p class="admonition-title">Solution to<a class="reference internal" href="#ex1"> Exercise 1</a></p>
-<div class="section" id="solution-content">
+<div class="dropdown solution admonition">
+<p class="admonition-title">marco-25-05-ex1</p>
 <p>卢卡斯批评指出的是<strong>用观察到的历史数据之间的数量关系来评价经济政策调整的效果是无效的</strong>，是指讲人的经济行为与宏观经济研究两者割裂开的研究方式不可行。宏观经济模型是从微观个体的理性出发，以各个相关主体的最优化问题作为宏观建模的基础。在思考宏观政策时，也应充分预估到各主体对于宏观政策的最优反应。</p>
 <p>在考虑到宏观政策对于个体偏好选择的影响的时候，经济环境及政策对于人的偏好选择的影响也是有一定规律，可以分析出一定的理性行为，那么在这种考量基础上进行的宏观建模工作，也是拥有微观基础的理论，是卢卡斯批判所赞同的研究范式。</p>
 </div>
-</div>
-<div class="exercise admonition" id="ex2">
-
-<p class="admonition-title"><span class="caption-number">Exercise 2 </span></p>
-<div class="section" id="exercise-content">
+<div class="exercise admonition">
+<p class="admonition-title">exercise</p>
 <p>有人批评经济学的“理性 人”假设要求太高，真实世界里的人不可能都是理性的。他们因此认为建立在理性人假设之上的经济分析没有意义。你该怎样反驳他们的观点？</p>
 </div>
-</div>
-<div class="exercise admonition" id="ex3">
-
-<p class="admonition-title"><span class="caption-number">Exercise 3 </span></p>
-<div class="section" id="exercise-content">
+<div class="exercise admonition">
+<p class="admonition-title">exercise</p>
 <p>在本讲<code class="docutils literal notranslate"><span class="pre">5.3</span></code>节的模型中，现在假设两个厂商生产产品的单位成本均为1,两个厂商共同面对的需求曲线方程为</p>
 <div class="math notranslate nohighlight">
 \[
@@ -586,7 +580,6 @@ p_t=a_t-0.5(q_{1t}+q_{2t})
 <li><p>如果厂商一用自然科学的研究方法来分析这个问题，将自己的产量固定在8，会观察到厂商二的产量与需求冲击 <span class="math notranslate nohighlight">\(a_t\)</span> 之间有何种关系？基于这样的对厂商二的行为的认知，厂商一在需求冲击 <span class="math notranslate nohighlight">\(a_t=20\)</span> 的时候会给自己选择多大的产量？获得的利润是多少？</p></li>
 <li><p>如果厂商一用正确的经济学分析方法来研究这个问题，它应该在需求冲击 <span class="math notranslate nohighlight">\(a_t=20\)</span> 的时候选择什么样的产量？获得多少利润？</p></li>
 </ol>
-</div>
 </div>
 </div>
 </div>
@@ -623,10 +616,10 @@ p_t=a_t-0.5(q_{1t}+q_{2t})
             <p class="prev-next-title">发展战略与经济绩效</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="ch07-09.html" title="next page">
+    <a class='right-next' id="next-link" href="ch07-08.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">消费、储蓄与中国的消费不足</p>
+        <p class="prev-next-title">消费与储蓄的决定</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
