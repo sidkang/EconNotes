@@ -1,21 +1,23 @@
-.admonition-exercise {
-  border-left-color: rgba(0, 246, 16, 1);
+
+
+.admonition.exercise {
+  border-left-color: rgba(0, 180, 16, 1);
 }
 .admonition.exercise .admonition-title {
-  background-color: rgba(0, 246, 16, .1);
+  background-color: rgba(0, 180, 16, .1);
 }
 .admonition.exercise .admonition-title:before {
-  color: rgba(0, 246, 16, 1);
+  color: rgba(0, 180, 16, 1);
   content: '\f07c';
 }
 
-.admonition-solution {
-  border-left-color: rgba(0, 246, 236, 1);
+.admonition.solution {
+  border-left-color: rgba(51, 165, 161, 1);
 }
 .admonition.solution .admonition-title {
-  background-color: rgba(0, 246, 236, .1);
+  background-color: rgba(51, 165, 161, 0.1);
 }
 .admonition.solution .admonition-title:before {
-  color: rgba(0, 246, 236, 1);
+  color: rgba(51, 165, 161, 1);
   content: '\f039';
 }

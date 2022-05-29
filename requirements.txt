@@ -1,5 +1,5 @@
 jupyter-book
-matplotlib
+
 numpy
 
 # add-ons
@@ -13,5 +13,7 @@ sphinxcontrib-tikz
 # others
 pandas
 scipy
+
 plantuml
 matplotlib
+bokeh

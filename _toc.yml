@@ -4,22 +4,31 @@
 format: jb-book
 root: intro
 parts:
-  - caption: 宏观经济学二十五讲
-    # numbered: 3
+  - caption: Economics
+    # numbered: 2
     chapters:
-    - file: note/macro-25/ch00.md
-    - file: note/macro-25/ch01.md
-    - file: note/macro-25/ch02.md
-    - file: note/macro-25/ch03.md
-    - file: note/macro-25/ch04.md
-    - file: note/macro-25/ch05-06.md
-    - file: note/macro-25/ch07-08.md
+    - file: notes/economics/macro-25/ch00.md
+      sections:
+      - file: notes/economics/macro-25/ch01.md
+      - file: notes/economics/macro-25/ch02-03.md
+      - file: notes/economics/macro-25/ch04.md
+      - file: notes/economics/macro-25/ch05-06.md
+      - file: notes/economics/macro-25/ch07-08.md
+      - file: notes/economics/macro-25/ch09.md
+      - file: notes/economics/macro-25/ch10.md
+      - file: notes/economics/macro-25/ch11.md
+      - file: notes/economics/macro-25/ch12-13.md
+
+  - caption: Topics
+    chapters:
+    - file: notes/topics/data-sources/chinese-data-sources.md
 
   - caption: About Site
     chapters:
+    - file: notes/syntax-guide.md
     - file: CHANGELOG.md
 
-  - caption: Syntax Reference
+  - caption: Markdown Reference
     chapters:
     - url: https://jupyterbook.org/en/stable/intro.html
       title: Jupyter Book Doc

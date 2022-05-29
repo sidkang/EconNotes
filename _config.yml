@@ -3,7 +3,8 @@
 
 title: EconNotes
 author: SID
-logo: note/assets/icon-drafting-compass-solid.svg
+copyright: "2022"
+logo: notes/assets/icon-drafting-compass-solid.svg
 only_build_toc_files: true
 
 # Force re-execution of notebooks on each build.
@@ -38,23 +39,25 @@ parse:
     - deflist
   myst_url_schemes: [mailto, http, https] # URI schemes that will be recognised as external URLs in Markdown links
   myst_dmath_double_inline: true  # Allow display math ($$) within an inline context
+  # myst_heading_slug_func: slugify.slugify
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/executablebooks/econ  # Online location of your book
-  path_to_book: note  # Optional path to your book, relative to the repository root
-  branch: master  # Which branch of the repository should be used when creating links (optional)
+  url: https://github.com/sidkang/EconNotes  # Online location of your book
+  # path_to_book: note  # Optional path to your book, relative to the repository root
+  branch: gh-page  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  favicon: "note/assets/icon-drafting-compass-solid.svg"
+  favicon: "notes/assets/icon-drafting-compass-solid.svg"
   use_issues_button: false
   use_repository_button: true
   use_multitoc_numbering: false
   home_page_in_navbar: false
   extra_navbar: |
-    Huge Thanks to the<br> <a href="https://jupyterbook.org">Jupyter Book Project</a> ❤️❤️❤️
+    Huge Thanks to<br>❤️<a href="https://jupyterbook.org">Jupyter Book Project</a>❤️
+  extra_footer: ""
   comments:
     utterances:
       repo: "sidkang/EconNotes"
@@ -68,7 +71,23 @@ sphinx:
     - sphinxcontrib.tikz
     - sphinxcontrib.kroki
     - sphinxcontrib.plantuml
+    # - sphinxcontrib.images  # zoom in, zoom out feature for images, not working well with jb currently 20220527
+        
   local_extensions          :   # A list of local extensions to load by sphinx specified by "name: path" items
   recursive_update          : false # A boolean indicating whether to overwrite the Sphinx config (true) or recursively update (false)
   config                    :   # key-value pairs to directly over-ride the Sphinx configuration
-    # latex_engine: xelatex
+    mermaid_params: ['--theme', 'forest']
+    mathjax_path: https://www.unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+    mathjax3_config:
+      loader:
+        load: ['[tex]/mathtools']
+      tex:
+        packages:
+          '[+]': ['mathtools']
+        macros:
+          "N": "\\mathbb{NOPSEF}"
+          "floor": ["\\lfloor#1\\rfloor", 1]
+          "bmat" : ["\\left[\\begin{array}"]
+          "emat" : ["\\end{array}\\right]"]
+    html_theme_options:
+      use_download_button: false
