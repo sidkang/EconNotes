@@ -1,0 +1,821 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>从内部失衡到外部失衡 &#8212; EconNotes</title>
+    
+  <link href="../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/admonition.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "sidkang/EconNotes");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/mathtools"]}, "tex": {"packages": {"[+]": ["mathtools"]}, "macros": {"N": "\\mathbb{NOPSEF}", "floor": ["\\lfloor#1\\rfloor", 1], "bmat": ["\\left[\\begin{array}"], "emat": ["\\end{array}\\right]"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://www.unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="shortcut icon" href="../../../_static/icon-drafting-compass-solid.svg"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="外部失衡与经济危机" href="ch11.html" />
+    <link rel="prev" title="中国的消费不足" href="ch09.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../_static/icon-drafting-compass-solid.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">EconNotes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Economics
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="ch00.html">
+   宏观经济学二十五讲
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="ch01.html">
+     有关中国经济的关键问题
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ch02-03.html">
+     通过GDP认识中国经济
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ch04.html">
+     发展战略与经济绩效
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ch05-06.html">
+     均衡宏观经济学方法论
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ch07-08.html">
+     消费与储蓄的决定
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ch09.html">
+     中国的消费不足
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     从内部失衡到外部失衡
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ch11.html">
+     外部失衡与经济危机
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ch12-13.html">
+     货币政策与财政政策
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Topics
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../topics/data-sources/chinese-data-sources.html">
+   经济数据来源整理
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  About Site
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../syntax-guide.html">
+   Syntax Reference
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../CHANGELOG.html">
+   Change Log
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Markdown Reference
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">
+   Jupyter Book Doc
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://myst-nb.readthedocs.io/en/latest/index.html">
+   MyST-NB Doc
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://opencomputinglab.github.io/SubjectMatterNotebooks/intro.html">
+   Jupter Useful Plugins
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   国民经济统计
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bop">
+     国际收支平衡表(BOP)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#iip">
+     国际投资头寸表(IIP)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     国民收入恒等式
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   全球失衡和过剩储蓄
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   全球失衡的模型分析
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     模型设定
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     模型构建
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     均衡分析
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     数量分析
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id10">
+   习题
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>从内部失衡到外部失衡</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   国民经济统计
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bop">
+     国际收支平衡表(BOP)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#iip">
+     国际投资头寸表(IIP)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     国民收入恒等式
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   全球失衡和过剩储蓄
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   全球失衡的模型分析
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     模型设定
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     模型构建
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     均衡分析
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     数量分析
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id10">
+   习题
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
+<h1>从内部失衡到外部失衡<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>对应书本第10章节</p>
+<div class="section" id="id2">
+<h2>国民经济统计<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="bop">
+<h3>国际收支平衡表(BOP)<a class="headerlink" href="#bop" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="iip">
+<h3>国际投资头寸表(IIP)<a class="headerlink" href="#iip" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id3">
+<h3>国民收入恒等式<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{lcr}
+\text{Y} &amp;=&amp;  \text{C$+$I$+$NX} \\
+\text{Y} &amp;=&amp;  \text{C$+$I$+$CA} \\
+\text{S} &amp;=&amp;  \text{I$+$CA}
+\end{array}
+\end{split}\]</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><strong>经常账的账户种解读方式</strong></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\( \text{CA} = \text{Y} - (\text{C} + \text{I}) = \text{产出} - \text{消费}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\text{CA} = \text{S} - \text{I} = \text{储蓄} - \text{投资}\)</span></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>全球失衡和过剩储蓄<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>补充图表</p>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>全球失衡的模型分析<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+</div>
+</div>
+<div class="section" id="id6">
+<h3>模型设定<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>模型中同时存在国内和国外两市场，国内市场为居民和国有企业两部门，国外市场为居民和私有企业两部门</p>
+<ul>
+<li><p>国内市场两部门同时拥有资本</p></li>
+<li><p>国外市场仅居民部门持有资本，根据之前章节模型，居民持有与私有企业持有时，居民效用不变，故此处简单化处理</p></li>
+</ul>
+</li>
+<li><p>存在国际资本市场</p>
+<ul>
+<li><p>国内居民在第1期借入 <span class="math notranslate nohighlight">\(b_{c1}\)</span> ，国内企业在第1期借入 <span class="math notranslate nohighlight">\(b_{f1}\)</span> ，国外居民在第1期借入 <span class="math notranslate nohighlight">\(b_1^*\)</span></p></li>
+<li><p>国际资本的必要回报率记为 <span class="math notranslate nohighlight">\(r_{g2}\)</span> ，并且需要在第二期生产结束后归还</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h3>模型构建<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<div class="tabbed-set docutils">
+<input checked="checked" id="af8c16fa-30bc-44dc-a6ea-5291ae1fac99" name="a7331b6a-e7df-405b-b95d-5af3fcdb5af4" type="radio">
+</input><label class="tabbed-label" for="af8c16fa-30bc-44dc-a6ea-5291ae1fac99">
+时序图</label><div class="tabbed-content docutils">
+<div class="figure align-default" id="id11">
+<div class="cell_output docutils container">
+<div class="output text_html"><img src="http://www.plantuml.com/plantuml/png/ZLJ9Ri8m5BpxArwfL14MWQsUgh2qIAW73fNQIoz49ZXWaSIHumXQnB_NJbYoGEWbYLxcpOndbA1nhAXKIU2ZXqZILK11CV4BIYOCFQWr2nX4FkKXYZSyZAYa0ImZ3kIvdvymZoQ--c8xzUhpLHYmK86hBqmYj10xQBmBJJGHIQZaJmCUPtorLc--rj04YhiyedfZ8i8u2PW46eChmiAxAPU1cNlwZbYu14rR03G-MTGmY9X563BLgP1CsoaBVpFV5zlhz2d_BLEUSNLMHuC1V339nH8m30Per1qQsozW-rIntN3MWOspT_i7kvSDq5Dg7-pkw0pI2A-8q1G5n6pUCaJzUUkCGWQZrGnRJgwgTi8LWLN2r5R9_jR1iquJjwM3hIhpQSChhSnRXZvRcxUiakzoH0lDYslpqGWFr-QpC49dmCZk7XK2gjP3ry5sBtswn75PTGkhkJv9JP_rVZTt_HxZn__hiyfrgqzyjq-Yoycg8LQL-qQZ9DSeIHijEB_adKsQ6DeWdVsA7AphxUOBAA6l97SRNTiwgMsTv4ymrj-p-V_z0G=="/></div></div>
+<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">时序图</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<input id="920ff3a5-a7dc-4b57-85f8-893fdab4faf9" name="a7331b6a-e7df-405b-b95d-5af3fcdb5af4" type="radio">
+</input><label class="tabbed-label" for="920ff3a5-a7dc-4b57-85f8-893fdab4faf9">
+本国居民</label><div class="tabbed-content docutils">
+<p>居民的最优化效用函数仍然为</p>
+<div class="math notranslate nohighlight">
+\[
+\max_{c_1, c_2, b_{c1}, k_{c1}}u(c_1) + \beta u(c_2)
+\]</div>
+<p>根据消费品为计价物，两期的约束条件可以记作</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+c_1 + k_{c1} &amp; \le (1 + r_1)k_{c0} + w_1L + b_{c1} \\
+c_2        &amp; \le (1 + r_2)k_{c1} + w_2L - (1 + r_{g2})b_{c1}
+\end{cases}
+\end{split}\]</div>
+<p>设定拉格朗日函数</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{L} = u(c_1) + \beta u(c_2) + \lambda_1[(1 + r_1)k_{c0} + w_1L + b_{c1} - c_1 - k_{c1}] + \lambda_2[(1 + r_2)k_{c1} + w_2L - (1 + r_{g2})b_{c1} - c_2]
+\]</div>
+<p>一阶优化条件为</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+&amp; c_1: &amp; u'(c_1) &amp; = \lambda_1 \\
+&amp; c_2: &amp; \beta u'(c_2) &amp; = \lambda_2 \\
+&amp; k_{c1}: &amp; \lambda_1 &amp; = \lambda_2(1 + r_2) \\
+&amp; b_{c1} &amp; \lambda_1 &amp; = \lambda_2(1 + r_{g2})
+\end{align*}
+\end{split}\]</div>
+<p>消去其中的拉格朗日乘子 <span class="math notranslate nohighlight">\(\lambda_1\)</span> 、 <span class="math notranslate nohighlight">\(\lambda_2\)</span> ，可得</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+&amp; u'(c_1) = \beta u'(c_2) ( 1 + r_2) \\
+&amp; u'(c_1) = \beta u'(c_2) ( 1 + r_{g2})
+\end{align*}
+\end{split}\]</div>
+<p>由以上可知， <span class="math notranslate nohighlight">\(r_2 = r_{g2}\)</span></p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><span class="math notranslate nohighlight">\(r_2 = r_{g2}\)</span> 无论居民是通过借出资金、或是接入资金作为投资，只有在两种方式的收益率想等时，居民消费储蓄才能达到最佳效用，否则，居民可以通过向收益率高的风向转移资源配置以获取更高的收益率，而随着收益更高的方向资源变多，其边际收益率会不断降低，直至两者收益率相等</p>
+</div>
+</div>
+<input id="8cb0eb3d-5c91-4020-8336-9bc0cb61a82a" name="a7331b6a-e7df-405b-b95d-5af3fcdb5af4" type="radio">
+</input><label class="tabbed-label" for="8cb0eb3d-5c91-4020-8336-9bc0cb61a82a">
+本国企业</label><div class="tabbed-content docutils">
+<p>模型中，本国企业仍为国企，居民无控制权，所以企业仍然以企业资本存量最大化为目标，即</p>
+<div class="math notranslate nohighlight">
+\[
+\max_{l_1^d, l_2^d, k_0^d, k_1^d, k_{f1}, b_{f1}} AF(k_{f1} + k_1^d, l_2^d) - w_2l_2^d - r_2k_1^d -(1 + r_{g2})b_{f1} + k_{f1}
+\]</div>
+<p>第1期的约束条件分别可以记作</p>
+<div class="math notranslate nohighlight">
+\[
+k_{f1} \le AF(k_{f0} + k_0^d, l_1^d) - w_1l_1^d - r_1k_0^d + b_{f1} + k_{f0}
+\]</div>
+<p>当目标去最优时，显然上式应该去等式，可得</p>
+<p>设置拉格朗日函数，可得</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{L} = AF(k_{f1} + k_1^d, l_2^d) - w_2l_2^d - r_2k_1^d -(1 + r_{g2})b_{f1} + k_{f1} + \lambda [AF(k_{f0} + k_0^d, l_1^d) - w_1l_1^d - r_1k_0^d + b_{f1} + k_{f0} - k_{f1}]
+\]</div>
+<p>相应的一阶条件为</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+k_0^d:  AF_1(k_{f0} + k_0^d, l_1^d) &amp;= r_1 \\
+k_1^d:  AF_1(k_{f1} + k_1^d, l_2^d) &amp;= r_2 \\
+l_1^d:  AF_2(k_{f0} + k_0^d, l_1^d) &amp;= w_1 \\
+l_2^d:  AF_2(k_{f1} + k_1^d, l_2^d) &amp;= w_1 \\
+k_{f1}:  AF_1(k_{f1} + k_1^d, l_2^d) &amp;= -1 + \lambda \\
+b_{f1}: \qquad \qquad  1 + r_{g2} &amp;= \lambda
+\end{align*}
+\end{split}\]</div>
+<p>通过消去拉格朗日乘子，可得 <span class="math notranslate nohighlight">\(AF_1(k_{f1} + k_1^d, l_2^d) = r_{g2} = r_2 \)</span></p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>与本国居民的理由一致，只有当企业的边际资本回报率与国内资本回报率、国际资本回报率一致时，企业得以实现最优化目标</p>
+</div>
+</div>
+<input id="ded5cad7-0ca4-4f64-9d75-20b30aef1c7f" name="a7331b6a-e7df-405b-b95d-5af3fcdb5af4" type="radio">
+</input><label class="tabbed-label" for="ded5cad7-0ca4-4f64-9d75-20b30aef1c7f">
+外国居民</label><div class="tabbed-content docutils">
+<p>外国居民的最优化效用函数与国内居民一致，仍然为</p>
+<div class="math notranslate nohighlight">
+\[
+\max_{c_1^*, c_2^*, b_1^*, k_1^*} u(c_1^*) + \beta u(c_2^*)
+\]</div>
+<p>根据消费品为计价物，两期的约束条件可以记作</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+c_1^* + k_1^* &amp; \le (1 + r_1^*)k_0^* + w_1^*L^* + b_1^* \\
+c_2^*        &amp; \le (1 + r_2^*)k_1^* + w_2^*L^* - (1 + r_{g2}^*)b_1^*
+\end{cases}
+\end{split}\]</div>
+<p>设定拉格朗日函数</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{L} = u(c_1^*) + \beta u(c_2^*) + \lambda_1[(1 + r_1^*)k_0^* + w_1^*L^* + b_1^* - c_1^* - k_1^*] + \lambda_2[(1 + r_2^*)k_1^* + w_2^*L^* - (1 + r_{g2}^*)b_1^* - (1 + r_{g2}^*)b_1^* - c_2^*]
+\]</div>
+<p>一阶优化条件为</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+&amp; c_1^*: &amp; u'(c_1^*) &amp; = \lambda_1 \\
+&amp; c_2^*: &amp; \beta u'(c_2^*) &amp; = \lambda_2 \\
+&amp; k_1^*: &amp; \lambda_1 &amp; = \lambda_2(1 + r_2^*) \\
+&amp; b_1^* &amp; \lambda_1 &amp; = \lambda_2(1 + r_{g2}^*)
+\end{align*}
+\end{split}\]</div>
+<p>消去其中的拉格朗日乘子 <span class="math notranslate nohighlight">\(\lambda_1\)</span> 、 <span class="math notranslate nohighlight">\(\lambda_2\)</span> ，可得</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+&amp; u'(c_1^*) = \beta u'(c_2^*) ( 1 + r_2^*) \\
+&amp; u'(c_1)^* = \beta u'(c_2^*) ( 1 + r_{g2}^*)
+\end{align*}
+\end{split}\]</div>
+<p>由以上可知， <span class="math notranslate nohighlight">\(r_2^* = r_{g2}^*\)</span></p>
+</div>
+<input id="aa58cba5-0477-49ee-8077-e370456e010a" name="a7331b6a-e7df-405b-b95d-5af3fcdb5af4" type="radio">
+</input><label class="tabbed-label" for="aa58cba5-0477-49ee-8077-e370456e010a">
+外国企业</label><div class="tabbed-content docutils">
+<p>外国企业为私有企业，所以第 <span class="math notranslate nohighlight">\(t=1,2\)</span> 期的最优化问题为</p>
+<div class="math notranslate nohighlight">
+\[
+\max_{k_{t-1}^{d*}, l_t^{d*}} AF(k_{t-1}^{d*}, l_t^{d*}) - w_t^*l_t^{d*} - r_t^*k_{t-1}^{d*}
+\]</div>
+<p>企业目标最优时，一阶条件为</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+k_0^{d*}: AF_1(k_0^{d*}, l_1^{d*}) = r_1^* \\
+k_1^{d*}: AF_1(k_1^{d*}, l_2^{d*}) = r_2^* \\
+l_1^{d*}: AF_2(k_0^{d*}, l_1^{d*}) = w_1^* \\
+l_2^{d*}: AF_2(k_1^{d*}, l_2^{d*}) = w_2^* \\
+\end{align*}
+\end{split}\]</div>
+</div>
+</div>
+</div>
+<div class="section" id="id8">
+<h3>均衡分析<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>在均衡时，国内、国外劳动力市场和资本市场以及国际资本市场君需要出清，所以，可得</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+&amp; b_{c1} + b_{f1} + b_1^* = b_1 + b_1^d = 0 \\[2ex]
+&amp; l_1^d = l_2^d = l_1^{d*} = l_2^{d*} = L \\
+&amp; k_0^d = k_{c0} , k_1^d = k_{c1} \\
+&amp; k_0^{d*} = k_0^* , k_1^{d*} = k_1^* \\
+\end{align*}
+\end{split}\]</div>
+<p>对上述企业的一阶段条件变换，由于有 <span class="math notranslate nohighlight">\(k_{c0} + k_{f0} = k_0, \quad k_{c1} + k_{f1} = k_1\)</span> ，可得</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+AF_1(k_0, L) &amp;= r_1, &amp;&amp; AF_1(k_0^*, L) = r_1^* \\
+AF_1(k_1, L) &amp;= r_2, &amp;&amp; AF_1(k_1^*, L) = r_2^*\\
+AF_2(k_0, L) &amp;= w_1, &amp;&amp; AF_2(k_0^*, L) = w_1^* \\
+AF_2(k_1, L) &amp;= w_1, &amp;&amp; AF_2(k_1^*, L) = w_2^*
+\end{align*}
+\end{split}\]</div>
+<p>分别根据本国企业和外国企业，可知 <span class="math notranslate nohighlight">\(r_2 = r_{g2} = r_2^*\)</span> ，可知</p>
+<div class="math notranslate nohighlight">
+\[
+AF_1(k_1, L) = AF_1(k_1^*, L)
+\]</div>
+<p>本国居民两期的消费预算约束可以写为下时</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+&amp; c_1 = k_0 + AF(k_0, L) - k_1 + b_1  \\
+&amp; c_2 = k_1 + AF(k_1, L) - (1 + r_1)(1 + r_2)k_{f0} - (1 + r_2)b_1
+\end{align*}
+\end{split}\]</div>
+<p>定义 <span class="math notranslate nohighlight">\(k_{f0} = \theta k_1, k_{c0} = (1 - \theta)k_1\)</span>，并将资本回报率的表达式带入，可得</p>
+<div class="math notranslate nohighlight">
+\[
+c_2 = k_1 + AF(k_1, L) - [1 + AF_1(k_0, L)][1 + AF_1(k_1, L)] \theta k_0 - [1 + AF_1(k_1, L)]b_1
+\]</div>
+<p>同样的，可以推算外国居民两期的消费预算约束可以写为</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+&amp; c_1^* &amp;=&amp; k_0^* + AF(k_0^*, L) - k_1^* + b_1^*  \\
+&amp; c_2^* = k_1^* + AF(k_1^*, L) - (1 + r_2^*)b_1^* &amp;=&amp; k_1^* + AF(k_1^*, L) - [1 + AF_1(k_1^*, L)]b_1^*
+\end{align*}
+\end{split}\]</div>
+<p>带入资本回报率的表达是到国内居民与国外居民的欧拉方程，可得</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+u'(c_1) = \beta u'(c_2) [1 + AF_1(k_1, L)] \\
+u'(c_1^*) = \beta u'(c_2^*) [1 + AF_1(k_1^*, L)]
+\end{align*}
+\end{split}\]</div>
+<p>我们将以上所有的等式组合到一起，可以得到</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+&amp; \text{本国}
+\begin{cases}
+u'(c_1) = \beta u'(c_2) [1 + AF_1(k_1, L)] \\
+c_1^* = k_0^* + AF(k_0^*, L) - k_1^* \color{red}{+ b_1^*}   \\
+c_2 = k_1 + AF(k_1, L) - [1 + AF_1(k_0, L)][1 + AF_1(k_1, L)] \theta k_0 \bbox[5px, border: 2px solid red]{- [1 + AF_1(k_1, L)]b_1}
+\end{cases}
+\\ &amp; \text{外国}
+\begin{cases}
+u'(c_1^*) = \beta u'(c_2^*) [1 + AF_1(k_1^*, L)] \\
+c_1^* = k_0^* + AF(k_0^*, L) - k_1^* \color{red}{+ b_1^*} \\
+c_2^* = k_1^* + AF(k_1^*, L) \bbox[5px, border: 2px solid red]{- [1 + AF_1(k_1^*, L)]b_1^*}
+\end{cases}
+\\ &amp; \text{关联}
+\begin{cases}
+b_1 + b_1^* = 0 \\
+k_1 = k_1^*
+\end{cases}
+\end{align*}
+\end{split}\]</div>
+</div>
+<div class="section" id="id9">
+<h3>数量分析<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>需要替换</p>
+</div>
+</div>
+</div>
+<div class="section" id="id10">
+<h2>习题<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notes/economics/macro-25"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ch09.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">中国的消费不足</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ch11.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">外部失衡与经济危机</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By SID<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
