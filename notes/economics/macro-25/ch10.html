@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>从内部失衡到外部失衡 &#8212; EconNotes</title>
     
-  <link href="../../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,12 +20,8 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
@@ -31,10 +29,10 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/base.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/admonition.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
@@ -42,6 +40,7 @@
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -81,7 +80,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -104,7 +103,21 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -113,9 +126,10 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -194,6 +208,11 @@ const thebe_selector_output = ".output, .cell_output"
      货币政策与财政政策
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ch14.html">
+     粘性价格的影响
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -250,57 +269,89 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-            <!-- Source interaction buttons -->
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
    国民经济统计
@@ -362,12 +413,11 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>从内部失衡到外部失衡</h1>
@@ -445,22 +495,23 @@ const thebe_selector_output = ".output, .cell_output"
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1>从内部失衡到外部失衡<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>从内部失衡到外部失衡<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
 <p>对应书本第10章节</p>
-<div class="section" id="id2">
-<h2>国民经济统计<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="bop">
-<h3>国际收支平衡表(BOP)<a class="headerlink" href="#bop" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="iip">
-<h3>国际投资头寸表(IIP)<a class="headerlink" href="#iip" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="id3">
-<h3>国民收入恒等式<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<section id="id2">
+<h2>国民经济统计<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+<section id="bop">
+<h3>国际收支平衡表(BOP)<a class="headerlink" href="#bop" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="iip">
+<h3>国际投资头寸表(IIP)<a class="headerlink" href="#iip" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="id3">
+<h3>国民收入恒等式<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{array}{lcr}
@@ -477,23 +528,23 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p><span class="math notranslate nohighlight">\(\text{CA} = \text{S} - \text{I} = \text{储蓄} - \text{投资}\)</span></p></li>
 </ul>
 </div>
-</div>
-</div>
-<div class="section" id="id4">
-<h2>全球失衡和过剩储蓄<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="id4">
+<h2>全球失衡和过剩储蓄<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h2>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
 <p>补充图表</p>
 </div>
-</div>
-<div class="section" id="id5">
-<h2>全球失衡的模型分析<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="id5">
+<h2>全球失衡的模型分析<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 </div>
 </div>
-<div class="section" id="id6">
-<h3>模型设定<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<section id="id6">
+<h3>模型设定<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>模型中同时存在国内和国外两市场，国内市场为居民和国有企业两部门，国外市场为居民和私有企业两部门</p>
 <ul>
@@ -508,22 +559,24 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 </ul>
-</div>
-<div class="section" id="id7">
-<h3>模型构建<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
-<div class="tabbed-set docutils">
-<input checked="checked" id="af8c16fa-30bc-44dc-a6ea-5291ae1fac99" name="a7331b6a-e7df-405b-b95d-5af3fcdb5af4" type="radio">
-</input><label class="tabbed-label" for="af8c16fa-30bc-44dc-a6ea-5291ae1fac99">
-时序图</label><div class="tabbed-content docutils">
-<div class="figure align-default" id="id11">
+</section>
+<section id="id7">
+<h3>模型构建<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h3>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="9db76c51-333f-4827-8ac6-99df7b6a5f9b" name="6e0cdf79-5be4-4614-8934-84d77591f95a" type="radio">
+</input><label class="sd-tab-label" for="9db76c51-333f-4827-8ac6-99df7b6a5f9b">
+时序图</label><div class="sd-tab-content docutils">
+<figure class="align-default" id="id11">
 <div class="cell_output docutils container">
 <div class="output text_html"><img src="http://www.plantuml.com/plantuml/png/ZLJ9Ri8m5BpxArwfL14MWQsUgh2qIAW73fNQIoz49ZXWaSIHumXQnB_NJbYoGEWbYLxcpOndbA1nhAXKIU2ZXqZILK11CV4BIYOCFQWr2nX4FkKXYZSyZAYa0ImZ3kIvdvymZoQ--c8xzUhpLHYmK86hBqmYj10xQBmBJJGHIQZaJmCUPtorLc--rj04YhiyedfZ8i8u2PW46eChmiAxAPU1cNlwZbYu14rR03G-MTGmY9X563BLgP1CsoaBVpFV5zlhz2d_BLEUSNLMHuC1V339nH8m30Per1qQsozW-rIntN3MWOspT_i7kvSDq5Dg7-pkw0pI2A-8q1G5n6pUCaJzUUkCGWQZrGnRJgwgTi8LWLN2r5R9_jR1iquJjwM3hIhpQSChhSnRXZvRcxUiakzoH0lDYslpqGWFr-QpC49dmCZk7XK2gjP3ry5sBtswn75PTGkhkJv9JP_rVZTt_HxZn__hiyfrgqzyjq-Yoycg8LQL-qQZ9DSeIHijEB_adKsQ6DeWdVsA7AphxUOBAA6l97SRNTiwgMsTv4ymrj-p-V_z0G=="/></div></div>
-<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">时序图</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">时序图</span><a class="headerlink" href="#id11" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
-</div>
-<input id="920ff3a5-a7dc-4b57-85f8-893fdab4faf9" name="a7331b6a-e7df-405b-b95d-5af3fcdb5af4" type="radio">
-</input><label class="tabbed-label" for="920ff3a5-a7dc-4b57-85f8-893fdab4faf9">
-本国居民</label><div class="tabbed-content docutils">
+<input id="b4b091a9-ab62-4cca-b4f3-165bcef71a4c" name="6e0cdf79-5be4-4614-8934-84d77591f95a" type="radio">
+</input><label class="sd-tab-label" for="b4b091a9-ab62-4cca-b4f3-165bcef71a4c">
+本国居民</label><div class="sd-tab-content docutils">
 <p>居民的最优化效用函数仍然为</p>
 <div class="math notranslate nohighlight">
 \[
@@ -566,9 +619,9 @@ c_2        &amp; \le (1 + r_2)k_{c1} + w_2L - (1 + r_{g2})b_{c1}
 <p><span class="math notranslate nohighlight">\(r_2 = r_{g2}\)</span> 无论居民是通过借出资金、或是接入资金作为投资，只有在两种方式的收益率想等时，居民消费储蓄才能达到最佳效用，否则，居民可以通过向收益率高的风向转移资源配置以获取更高的收益率，而随着收益更高的方向资源变多，其边际收益率会不断降低，直至两者收益率相等</p>
 </div>
 </div>
-<input id="8cb0eb3d-5c91-4020-8336-9bc0cb61a82a" name="a7331b6a-e7df-405b-b95d-5af3fcdb5af4" type="radio">
-</input><label class="tabbed-label" for="8cb0eb3d-5c91-4020-8336-9bc0cb61a82a">
-本国企业</label><div class="tabbed-content docutils">
+<input id="a66be01a-2acf-4de2-8e08-3f4647850dcc" name="6e0cdf79-5be4-4614-8934-84d77591f95a" type="radio">
+</input><label class="sd-tab-label" for="a66be01a-2acf-4de2-8e08-3f4647850dcc">
+本国企业</label><div class="sd-tab-content docutils">
 <p>模型中，本国企业仍为国企，居民无控制权，所以企业仍然以企业资本存量最大化为目标，即</p>
 <div class="math notranslate nohighlight">
 \[
@@ -603,9 +656,9 @@ b_{f1}: \qquad \qquad  1 + r_{g2} &amp;= \lambda
 <p>与本国居民的理由一致，只有当企业的边际资本回报率与国内资本回报率、国际资本回报率一致时，企业得以实现最优化目标</p>
 </div>
 </div>
-<input id="ded5cad7-0ca4-4f64-9d75-20b30aef1c7f" name="a7331b6a-e7df-405b-b95d-5af3fcdb5af4" type="radio">
-</input><label class="tabbed-label" for="ded5cad7-0ca4-4f64-9d75-20b30aef1c7f">
-外国居民</label><div class="tabbed-content docutils">
+<input id="2fca76bc-4d22-49b0-a5c8-72970dc1e04f" name="6e0cdf79-5be4-4614-8934-84d77591f95a" type="radio">
+</input><label class="sd-tab-label" for="2fca76bc-4d22-49b0-a5c8-72970dc1e04f">
+外国居民</label><div class="sd-tab-content docutils">
 <p>外国居民的最优化效用函数与国内居民一致，仍然为</p>
 <div class="math notranslate nohighlight">
 \[
@@ -644,9 +697,9 @@ c_2^*        &amp; \le (1 + r_2^*)k_1^* + w_2^*L^* - (1 + r_{g2}^*)b_1^*
 \end{split}\]</div>
 <p>由以上可知， <span class="math notranslate nohighlight">\(r_2^* = r_{g2}^*\)</span></p>
 </div>
-<input id="aa58cba5-0477-49ee-8077-e370456e010a" name="a7331b6a-e7df-405b-b95d-5af3fcdb5af4" type="radio">
-</input><label class="tabbed-label" for="aa58cba5-0477-49ee-8077-e370456e010a">
-外国企业</label><div class="tabbed-content docutils">
+<input id="27c5a058-9c6c-45cd-a79c-8602339eb55c" name="6e0cdf79-5be4-4614-8934-84d77591f95a" type="radio">
+</input><label class="sd-tab-label" for="27c5a058-9c6c-45cd-a79c-8602339eb55c">
+外国企业</label><div class="sd-tab-content docutils">
 <p>外国企业为私有企业，所以第 <span class="math notranslate nohighlight">\(t=1,2\)</span> 期的最优化问题为</p>
 <div class="math notranslate nohighlight">
 \[
@@ -664,9 +717,9 @@ l_2^{d*}: AF_2(k_1^{d*}, l_2^{d*}) = w_2^* \\
 \end{split}\]</div>
 </div>
 </div>
-</div>
-<div class="section" id="id8">
-<h3>均衡分析<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id8">
+<h3>均衡分析<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h3>
 <p>在均衡时，国内、国外劳动力市场和资本市场以及国际资本市场君需要出清，所以，可得</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -744,19 +797,19 @@ k_1 = k_1^*
 \end{cases}
 \end{align*}
 \end{split}\]</div>
-</div>
-<div class="section" id="id9">
-<h3>数量分析<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id9">
+<h3>数量分析<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h3>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
 <p>需要替换</p>
 </div>
-</div>
-</div>
-<div class="section" id="id10">
-<h2>习题<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
-</div>
-</div>
+</section>
+</section>
+<section id="id10">
+<h2>习题<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h2>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -780,9 +833,11 @@ k_1 = k_1^*
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="ch09.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -798,24 +853,28 @@ k_1 = k_1^*
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By SID<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
     
-      By SID<br/>
-    
-        &copy; Copyright 2022.<br/>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

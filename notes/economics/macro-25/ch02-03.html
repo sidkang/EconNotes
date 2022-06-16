@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>通过GDP认识中国经济 &#8212; EconNotes</title>
     
-  <link href="../../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,12 +20,8 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
@@ -31,10 +29,10 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/base.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/admonition.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
@@ -42,6 +40,7 @@
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -81,7 +80,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -104,7 +103,21 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -113,9 +126,10 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -194,6 +208,11 @@ const thebe_selector_output = ".output, .cell_output"
      货币政策与财政政策
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ch14.html">
+     粘性价格的影响
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -250,57 +269,89 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-            <!-- Source interaction buttons -->
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id1">
    国民财富到GDP
@@ -448,12 +499,11 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>通过GDP认识中国经济</h1>
@@ -617,25 +667,26 @@ const thebe_selector_output = ".output, .cell_output"
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="gdp">
-<h1>通过GDP认识中国经济<a class="headerlink" href="#gdp" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="gdp">
+<h1>通过GDP认识中国经济<a class="headerlink" href="#gdp" title="Permalink to this headline">#</a></h1>
 <p>对应书本第2、3章节</p>
-<div class="section" id="id1">
-<h2>国民财富到GDP<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id2">
-<h3>国内生产总值(GDP)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<section id="id1">
+<h2>国民财富到GDP<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<section id="id2">
+<h3>国内生产总值(GDP)<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
 <p>国内生产总值：Gross Domestic Product</p>
 <p>GDP的定义</p>
 <p>指按市场价格计算的一个国家 (或地区)所有常住单位在一定时期内生产活动的最终成果。</p>
 <p>将所有能够降低稀缺性的劳动成果加总，结果就是GDP</p>
 <p>GDP is published on a quarterly basis as part of the National Income and Product Accounts (NIPA), two sources for which are <a class="reference external" href="http://www.bea.gov/national/index.htm#gdp">Bureau of Economic Analysis</a> and <a class="reference external" href="https://research.stlouisfed.org/fred2/">FRED database</a>.</p>
-</div>
-</div>
-<div class="section" id="id3">
-<h2>通过GDP认识中国经济<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="id3">
+<h2>通过GDP认识中国经济<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
 <div class="mermaid">
             %%{init: {'theme':'forest'}}%%
 flowchart LR
@@ -666,38 +717,38 @@ flowchart LR
 </tr>
 </tbody>
 </table>
-<div class="section" id="id4">
-<h3>生产法<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<section id="id4">
+<h3>生产法<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
 <p>第一产业 产品直接取自自然界的生产部门</p>
 <p>第二产业 对初级产品再加工的生产部门</p>
 <p>第三产业 提供各种服务的部门</p>
 <p>观察占比&amp;波动</p>
-</div>
-<div class="section" id="id5">
-<h3>支出法<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id5">
+<h3>支出法<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
 {\rm 总支出 } &amp; = {\rm 消费支出 + 投资支出 + (政府支出) + 净出口 } \\
 \rm Y &amp; = C + I + G + NX \\
 \frac{\Delta Y}{Y} &amp; = \frac{\Delta C}{C} + \frac{\Delta I}{I} + \frac{\Delta NX}{NX}
 \end{aligned}\end{split}\]</div>
-</div>
-<div class="section" id="id6">
-<h3>收入法<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id6">
+<h3>收入法<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h3>
 <p>投入产出表中每10年公布4次</p>
 <p>劳动者报酬占比变化</p>
-</div>
-<div class="section" id="id7">
-<h3>国民生产总值<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id7">
+<h3>国民生产总值<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h3>
 <p>国民生产总值(gross national product, GNP)</p>
 <p>国外对国内净要素支付(net factor payments from abroad, NFP)</p>
 <div class="math notranslate nohighlight">
 \[
 \rm GNP = GDP + NFP
 \]</div>
-</div>
-<div class="section" id="id8">
-<h3>GDP的缺陷<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id8">
+<h3>GDP的缺陷<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h3>
 <p>GDP作为衡量总体经济福利时候(a mesure of aggregate economic welfare)</p>
 <ol class="simple">
 <li><p>GDP不包含收入在人口中的分配方式</p></li>
@@ -708,43 +759,43 @@ flowchart LR
 <li><p><strong>地下经济</strong>(underground economy)不包含在GDP中</p></li>
 <li><p>如何计算政府支出，政府生产的大部分产品无法按照市场价格出售 (NIPA使用成本计算)</p></li>
 </ol>
-</div>
-<div class="section" id="gdpgdp">
-<h3>实际GDP和名义GDP<a class="headerlink" href="#gdpgdp" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="gdpgdp">
+<h3>实际GDP和名义GDP<a class="headerlink" href="#gdpgdp" title="Permalink to this headline">#</a></h3>
 <p>链式加权(chain-weighting)</p>
-</div>
-<div class="section" id="id9">
-<h3>价格水平的衡量指标<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="gdp-implicit-gdp-price-deflator">
-<h4>隐含GDP价格缩减指数(implicit GDP price deflator)<a class="headerlink" href="#gdp-implicit-gdp-price-deflator" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="id9">
+<h3>价格水平的衡量指标<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h3>
+<section id="gdp-implicit-gdp-price-deflator">
+<h4>隐含GDP价格缩减指数(implicit GDP price deflator)<a class="headerlink" href="#gdp-implicit-gdp-price-deflator" title="Permalink to this headline">#</a></h4>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
 {\rm 隐含GDP价格缩减指数} &amp; = {\rm \frac{名义GDP}{实际GDP} \times 100 }
 \\\
 \text{Implicit GDP price deflator} &amp; = {\rm { Nominal \, GDP \over Real \, GDP } \times 100 }
 \end{aligned}\end{split}\]</div>
-</div>
-<div class="section" id="consumer-price-index-cpi">
-<h4>消费价格指数(consumer price index, CPI)<a class="headerlink" href="#consumer-price-index-cpi" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="consumer-price-index-cpi">
+<h4>消费价格指数(consumer price index, CPI)<a class="headerlink" href="#consumer-price-index-cpi" title="Permalink to this headline">#</a></h4>
 <div class="math notranslate nohighlight">
 \[
 {\rm 当年CPI = { 按当年价格计算的基年消费额 \over 按基年价格计算的基年消费额 } \times 100 }
 \]</div>
 <p>衡量通货膨胀率时，GDP价格缩减指数往往好于CPI。</p>
-</div>
-<div class="section" id="id10">
-<h4>衡量实际GDP和价格水平的问题<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="id10">
+<h4>衡量实际GDP和价格水平的问题<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h4>
 <ol class="simple">
 <li><p>相对价格的不断变动。人们会根据相对价格的变化，调整消费的模式。进而使得在计量通货膨胀水平时，CPI相比隐含GDP价格缩减指数相对高估</p></li>
 <li><p>NIPA未包含商品的质量变化</p></li>
 <li><p>衡量出的GDP中如何对待新商品</p></li>
 </ol>
-</div>
-</div>
-<div class="section" id="savings-wealth-and-capital">
-<h3>Savings, Wealth and Capital<a class="headerlink" href="#savings-wealth-and-capital" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="private-disposable-income">
-<h4>私人可支配收入(private disposable income)<a class="headerlink" href="#private-disposable-income" title="Permalink to this headline">¶</a></h4>
+</section>
+</section>
+<section id="savings-wealth-and-capital">
+<h3>Savings, Wealth and Capital<a class="headerlink" href="#savings-wealth-and-capital" title="Permalink to this headline">#</a></h3>
+<section id="private-disposable-income">
+<h4>私人可支配收入(private disposable income)<a class="headerlink" href="#private-disposable-income" title="Permalink to this headline">#</a></h4>
 <div class="math notranslate nohighlight">
 \[
 Y^d = Y + NFP + TR + INT - T
@@ -754,26 +805,26 @@ Y^d = Y + NFP + TR + INT - T
 <li><p>INT 政府债务的利息支出</p></li>
 <li><p>T 税收</p></li>
 </ol>
-</div>
-<div class="section" id="private-sector-saving">
-<h4>私人部门储蓄(private sector saving)<a class="headerlink" href="#private-sector-saving" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="private-sector-saving">
+<h4>私人部门储蓄(private sector saving)<a class="headerlink" href="#private-sector-saving" title="Permalink to this headline">#</a></h4>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
 S^p &amp; = Y^d - C \\
     &amp; = Y + NFP + TR + INT - T - C \\
 \end{aligned}\end{split}\]</div>
-</div>
-<div class="section" id="government-saving">
-<h4>政府储蓄(government saving)<a class="headerlink" href="#government-saving" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="government-saving">
+<h4>政府储蓄(government saving)<a class="headerlink" href="#government-saving" title="Permalink to this headline">#</a></h4>
 <p>政府盈余(government surplus): <span class="math notranslate nohighlight">\(S^g\)</span></p>
 <div class="math notranslate nohighlight">
 \[ S^g = T - TR - INT - G \]</div>
 <p>政府赤字(government deficit): <span class="math notranslate nohighlight">\(D\)</span></p>
 <div class="math notranslate nohighlight">
 \[ D = -S^g = - T + TR + INT + G \]</div>
-</div>
-<div class="section" id="national-saving">
-<h4>国民储蓄(national saving)<a class="headerlink" href="#national-saving" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="national-saving">
+<h4>国民储蓄(national saving)<a class="headerlink" href="#national-saving" title="Permalink to this headline">#</a></h4>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
 S &amp; = S^p + S^g \\
@@ -784,10 +835,10 @@ S &amp; = S^p + S^g \\
 \end{aligned}\end{split}\]</div>
 <p>经常账户盈余(current account surplus) <span class="math notranslate nohighlight">\(NX + NFP\)</span></p>
 <p>上述等式反应“国内投资未吸收的国内储蓄一定会以商品或服务的形式输往国外</p>
-</div>
-</div>
-<div class="section" id="labor-market-measurement">
-<h3>Labor Market Measurement<a class="headerlink" href="#labor-market-measurement" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="labor-market-measurement">
+<h3>Labor Market Measurement<a class="headerlink" href="#labor-market-measurement" title="Permalink to this headline">#</a></h3>
 <ol class="simple">
 <li><p>employed</p></li>
 <li><p>unemployed</p></li>
@@ -799,8 +850,8 @@ S &amp; = S^p + S^g \\
 \text{Participation rate} &amp; = {\text{Labor force} \over \text{Total working=age populaction}} \\
 \text{Employment/Population ratio} &amp; = {\text{total Employment} \over \text{Total working=age population}}
 \end{aligned}\end{split}\]</div>
-<div class="section" id="id11">
-<h4>美国失业率实践<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+<section id="id11">
+<h4>美国失业率实践<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>方法</p></th>
@@ -823,37 +874,37 @@ S &amp; = S^p + S^g \\
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
-<div class="section" id="id12">
-<h2>初探中国经济的消费不足问题<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="id13">
-<h2>中国宏观经济的数据质量问题<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+</section>
+<section id="id12">
+<h2>初探中国经济的消费不足问题<a class="headerlink" href="#id12" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="id13">
+<h2>中国宏观经济的数据质量问题<a class="headerlink" href="#id13" title="Permalink to this headline">#</a></h2>
 <p>GDP增速与克强指数</p>
 <p>GDP修正前后增速情况</p>
 <p>中国 -&gt; 香港 出口以及进口数字</p>
-</div>
-<div class="section" id="id14">
-<h2>供给与需求<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="id15">
-<h2>生产函数<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="id14">
+<h2>供给与需求<a class="headerlink" href="#id14" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="id15">
+<h2>生产函数<a class="headerlink" href="#id15" title="Permalink to this headline">#</a></h2>
 <p>规模报酬不变<a class="footnote-reference brackets" href="#id19" id="id16">1</a></p>
-</div>
-<div class="section" id="id17">
-<h2>增长计量<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="id17">
+<h2>增长计量<a class="headerlink" href="#id17" title="Permalink to this headline">#</a></h2>
 <div class="math notranslate nohighlight">
 \[
 Y_t = A_tK_t^{\alpha}L_t^{1 - \alpha}
 \]</div>
-</div>
-<div class="section" id="solow-model">
-<h2>索洛增长模型(Solow Model)<a class="headerlink" href="#solow-model" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="id18">
-<h2>对中国经济增长的数量分析<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="solow-model">
+<h2>索洛增长模型(Solow Model)<a class="headerlink" href="#solow-model" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="id18">
+<h2>对中国经济增长的数量分析<a class="headerlink" href="#id18" title="Permalink to this headline">#</a></h2>
 <p>人口红利?</p>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
@@ -861,8 +912,8 @@ Y_t = A_tK_t^{\alpha}L_t^{1 - \alpha}
 <dd><p>待补充解释 Constant Return to Scale</p>
 </dd>
 </dl>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -886,9 +937,11 @@ Y_t = A_tK_t^{\alpha}L_t^{1 - \alpha}
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="ch01.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -904,24 +957,28 @@ Y_t = A_tK_t^{\alpha}L_t^{1 - \alpha}
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By SID<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
     
-      By SID<br/>
-    
-        &copy; Copyright 2022.<br/>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

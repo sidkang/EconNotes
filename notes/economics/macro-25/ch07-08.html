@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>消费与储蓄的决定 &#8212; EconNotes</title>
     
-  <link href="../../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,12 +20,8 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
@@ -31,10 +29,10 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/base.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/admonition.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
@@ -42,6 +40,7 @@
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -81,7 +80,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -104,7 +103,21 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -113,9 +126,10 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -194,6 +208,11 @@ const thebe_selector_output = ".output, .cell_output"
      货币政策与财政政策
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ch14.html">
+     粘性价格的影响
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -250,57 +269,89 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-            <!-- Source interaction buttons -->
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
    储蓄的基本概念
@@ -475,12 +526,11 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>消费与储蓄的决定</h1>
@@ -671,14 +721,15 @@ const thebe_selector_output = ".output, .cell_output"
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1>消费与储蓄的决定<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>消费与储蓄的决定<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h1>
 <p>对应书本第7、8讲</p>
-<div class="section" id="id2">
-<h2>储蓄的基本概念<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<section id="id2">
+<h2>储蓄的基本概念<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
@@ -693,15 +744,15 @@ const thebe_selector_output = ".output, .cell_output"
 <p class="admonition-title">Tip</p>
 <p>!todo</p>
 </div>
-</div>
-<div class="section" id="id3">
-<h2>拉姆齐模型(仅居民积累资本)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="id3">
+<h2>拉姆齐模型(仅居民积累资本)<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 </div>
 </div>
-<div class="section" id="id4">
-<h3>模型基础设定<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<section id="id4">
+<h3>模型基础设定<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>两期限模型(two period model)</p></li>
 <li><p>资本折旧率为0</p></li>
@@ -714,9 +765,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p><strong>前定变量(pre-determined variable)</strong>，这类取值在上一期被决定,也被称为<strong>状态变量(state variable)</strong>—-时间下标根据类型而定</p></li>
 </ul>
 </div>
-</div>
-<div class="section" id="id5">
-<h3>居民决策<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id5">
+<h3>居民决策<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
 <p>经济增长的目标是什么，或者什么是评价经济增长的标准</p>
 <ul class="simple">
 <li><p>~~追求更高的人均产出（人均GDP）—-(Solow模型)~~</p></li>
@@ -761,7 +812,7 @@ c_2 \qquad &amp; = k_1 + w_2L + (1+r_2)k_1 \\
 \end{split}\]</div>
 <p>将拉格朗日乘子消去后得到下式，也可称作<code class="docutils literal notranslate"><span class="pre">欧拉方程(Euler</span> <span class="pre">Function)</span></code></p>
 <div class="math notranslate nohighlight" id="equation-eular-equation">
-<span class="eqno">(4)<a class="headerlink" href="#equation-eular-equation" title="Permalink to this equation">¶</a></span>\[
+<span class="eqno">(4)<a class="headerlink" href="#equation-eular-equation" title="Permalink to this equation">#</a></span>\[
 u'(c_1) = u'(c_2)(1+r_2)
 \]</div>
 <p>综上，可以看出欧拉方程是居民消费和储蓄的决策方程。居民的消费储蓄决定于两个要素：</p>
@@ -769,17 +820,19 @@ u'(c_1) = u'(c_2)(1+r_2)
 <li><p>居民两期之间的效用比 <span class="math notranslate nohighlight">\(u'(c_1)/\beta u'(c_2)\)</span></p></li>
 <li><p>储蓄/资本回报率 <span class="math notranslate nohighlight">\(r_2\)</span></p></li>
 </ol>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
-<div class="figure align-default" id="id34">
+<figure class="align-default" id="id34">
 <div class="cell_output docutils container">
 <div class="output text_html"><img src="http://www.plantuml.com/plantuml/png/TP6nQiCm48RtUuhhrj24Hg9JCI6Xq2b3XsmUp65V4X595h9Cy_YHbDJ8j5rEqltV7Hy8jaCW7qQZuIcSsJ0wJSh2S57MaIU3dLCetzPbXuyqwd3WQzXfTRA6RS0s5lO04GcgLOvYxwEtmsZO8mtOzdQMVIflKlyOJpZvVdJunLxr7Gh0UhL90-zOQGfytUoNU6dMrUlz1Id3YAJPo1WAvuXa8jyX9pWjoStlHkoNp-B5Ds9HedMrAh6s4JyHssvk9g6UxynU4_-FrPJ_AIKVKd9HaB-SPEcqZILzs0q="/></div></div>
-<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">时序图</span><a class="headerlink" href="#id34" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-</div>
-<div class="section" id="id6">
-<h3>企业决策<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">时序图</span><a class="headerlink" href="#id34" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+</section>
+<section id="id6">
+<h3>企业决策<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h3>
 <p>由于企业在每期末均进行清算，不进行资本或利润的留存，所以所有储蓄均在消费者处。即，企业每一期的最优化问题可以表达为</p>
 <div class="math notranslate nohighlight">
 \[
@@ -791,9 +844,9 @@ u'(c_1) = u'(c_2)(1+r_2)
 AF_{k_{t-1}^d}(k_{t-1}^d,l_t^d)=r_t \\
 AF_{l_1^d}(k_{t-1}^d,l_t^d)=w_t
 \end{split}\]</div>
-</div>
-<div class="section" id="id7">
-<h3>一般均衡<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id7">
+<h3>一般均衡<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h3>
 <p>要达到<code class="docutils literal notranslate"><span class="pre">市场出清(market</span> <span class="pre">clear)</span></code>的情况下，需要以下条件达成</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -824,16 +877,16 @@ c_2 \qquad &amp; = AF(k_1, L) + k_1
 <li><p>消费者的<code class="docutils literal notranslate"><span class="pre">主观偏好</span></code>无法预测、度量，那么如何应用于现实呢？</p></li>
 </ol>
 </div>
-</div>
-</div>
-<div class="section" id="id8">
-<h2>拉姆齐模型(仅企业积累资本)<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="id8">
+<h2>拉姆齐模型(仅企业积累资本)<a class="headerlink" href="#id8" title="Permalink to this headline">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 </div>
 </div>
-<div class="section" id="id9">
-<h3>模型设定<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<section id="id9">
+<h3>模型设定<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h3>
 <p>相比之前的模型设定，本此模型中，我们假设模型对应一个私有制社会—-<code class="docutils literal notranslate"><span class="pre">企业为居民所拥有，其股份由居民所持有</span></code>
 具体会有以下的一些不同，可以通过时序图1和时序图2看出:</p>
 <ol class="simple">
@@ -851,16 +904,16 @@ c_2 \qquad &amp; = AF(k_1, L) + k_1
 <ol class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">待补充</span></code></p></li>
 </ol>
-</div>
-<div class="section" id="id10">
-<h3>居民决策<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
-<div class="margin sidebar">
+</section>
+<section id="id10">
+<h3>居民决策<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h3>
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>第2期中，由于2期末世界毁灭😀，居民所持有的股份价值变为0</p>
 </div>
-</div>
+</aside>
 <p>居民效用函数仍然维持 <span class="math notranslate nohighlight">\(u(c_1)+ \beta u(c_2)\)</span> 这样的形式，约束方面则变为</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -896,7 +949,7 @@ c_2 \qquad \quad &amp; = w_2L + d_2s_1
 \end{split}\]</div>
 <p>将拉格朗日乘子消去后得到下式</p>
 <div class="math notranslate nohighlight" id="equation-ramsy-model-only-firm-asset-pricing-equation">
-<span class="eqno">(5)<a class="headerlink" href="#equation-ramsy-model-only-firm-asset-pricing-equation" title="Permalink to this equation">¶</a></span>\[
+<span class="eqno">(5)<a class="headerlink" href="#equation-ramsy-model-only-firm-asset-pricing-equation" title="Permalink to this equation">#</a></span>\[
 v_1 = \beta \frac{u'(c_2)}{u'(c_1)}d_2
 \]</div>
 <div class="admonition important">
@@ -909,17 +962,19 @@ v_1 = \beta \frac{u'(c_2)}{u'(c_1)}d_2
 <li><p>但同时方程也说明主观偏好可以通过资产价格反推得到</p></li>
 </ul>
 </div>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
-<div class="figure align-default" id="id35">
+<figure class="align-default" id="id35">
 <div class="cell_output docutils container">
 <div class="output text_html"><img src="http://www.plantuml.com/plantuml/png/bP8nQyCm48Lt_OhBqgaciUXKX4aeTChGeLievh0lZh0b2-bCGtzzPHaSUwYXonrwtxkJ7aWS0wFdmNHYvpms1e6f_m7s0uaTtyWGk0wr5Q7Lrg570xNJ85yEIuMkE7JyINS-TRgnXYn35Gjv8QA5TQKTHksjjs4mv043LBrTiNVjpQXVOnUDxmS77-HrNqCkBban-bz1TSXqByxF4Cg3saydyPI6G6LViwDTu3W9SS7eYTmWtugpsgSkqk2yFMdVPRw5wp9FTq-6YygMC9Jv7wHw4BBrEg1S19oUD-QR_QjuIMeVyD_Xv7OukHL1BYCSOna_pYy="/></div></div>
-<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">时序图</span><a class="headerlink" href="#id35" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-</div>
-<div class="section" id="id11">
-<h3>企业决策<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">时序图</span><a class="headerlink" href="#id35" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+</section>
+<section id="id11">
+<h3>企业决策<a class="headerlink" href="#id11" title="Permalink to this headline">#</a></h3>
 <p>对于企业，在第2期中，因为第2期后世界毁灭，所以股权价值归为0，消费者为了提升效用将会尽量更多消费，所以消费者将会要求公司将所有资产在支付劳动后，将分红全部给予消费者</p>
 <p>其次，对于第1期，企业应该以分红最多为目标，即转化为企业的目标是<code class="docutils literal notranslate"><span class="pre">在分红前将企业股票价值最大化为目标</span></code>，可以记为 <span class="math notranslate nohighlight">\(d_1 + v_1\)</span> ，如果企业不这么做，那么消费者作为股东会将管理层下岗，或者其他消费者可能会发起敌意并购再炒掉管理层</p>
 <p>同时可以参考居民在第1期中的预算约束</p>
@@ -956,9 +1011,9 @@ d_2 \qquad &amp; \le AF(k_1, l_2^d) - w_2l_2^d + k_1
 \frac{\partial F}{\partial k_1} = 0 &amp; \Rightarrow \beta \frac{u'(c_2)}{u'(c_1)} [AF_{k_1}(k_1, l_2^d) + 1] = 1
 \end{align*}
 \end{split}\]</div>
-</div>
-<div class="section" id="id12">
-<h3>一般均衡<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id12">
+<h3>一般均衡<a class="headerlink" href="#id12" title="Permalink to this headline">#</a></h3>
 <p>在均衡时，可知有条件 <span class="math notranslate nohighlight">\( l_1^d = l_2^d = L, s_1 = s_0 = 1 \)</span>, 上式可简化为</p>
 <div class="math notranslate nohighlight">
 \[
@@ -970,10 +1025,10 @@ u'(c_1) = \beta u'(c_2)[AF_{k_1}(k_1, L) + 1]
 <p><code class="docutils literal notranslate"><span class="pre">刺穿企业帷幕(piercing</span> <span class="pre">the</span> <span class="pre">corporate</span> <span class="pre">veil)</span></code></p>
 <p>以上模型说明，在居民拥有企业股权时，居民储蓄或企业储蓄效果相同，股票价格由居民决定，股票价值最大化，同时也意味着居民效用最大化，故<code class="docutils literal notranslate"><span class="pre">居民与企业两部门之间的收入分配变化不影响居民的消费与储蓄决策</span></code></p>
 </div>
-</div>
-</div>
-<div class="section" id="id13">
-<h2>模型求解的三点技术注释<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="id13">
+<h2>模型求解的三点技术注释<a class="headerlink" href="#id13" title="Permalink to this headline">#</a></h2>
 <ol class="simple">
 <li><p>居民优化问题中企业股份的选择</p>
 <ul class="simple">
@@ -994,15 +1049,15 @@ u'(c_1) = \beta u'(c_2)[AF_{k_1}(k_1, L) + 1]
 </ul>
 </li>
 </ol>
-</div>
-<div class="section" id="id14">
-<h2>拉姆齐模型(居民与企业同时积累资本)<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="id14">
+<h2>拉姆齐模型(居民与企业同时积累资本)<a class="headerlink" href="#id14" title="Permalink to this headline">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 </div>
 </div>
-<div class="section" id="id15">
-<h3>模型设定<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<section id="id15">
+<h3>模型设定<a class="headerlink" href="#id15" title="Permalink to this headline">#</a></h3>
 <ol class="simple">
 <li><p>沿用之前的私有制社会设定—-<code class="docutils literal notranslate"><span class="pre">企业为居民所拥有，其股份由居民所持有</span></code>，世界依然在第2期毁灭</p></li>
 <li><p>居民和企业同时持有储蓄，对于t期期初，可分别标记为 <span class="math notranslate nohighlight">\(k_{ct}\)</span> 以及 <span class="math notranslate nohighlight">\(k_{ft}\)</span> ，同时假定第1期期初储蓄总量为常量 <span class="math notranslate nohighlight">\( k_0 \equiv k_{c0} + k_{f0}\)</span></p></li>
@@ -1015,9 +1070,9 @@ u'(c_1) = \beta u'(c_2)[AF_{k_1}(k_1, L) + 1]
 </li>
 <li><p>宏观层面，企业股份的总股数正规化为1， 即 <span class="math notranslate nohighlight">\(s_0 = s_1 = 1\)</span></p></li>
 </ol>
-</div>
-<div class="section" id="id16">
-<h3>居民决策<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id16">
+<h3>居民决策<a class="headerlink" href="#id16" title="Permalink to this headline">#</a></h3>
 <p>显然，居民效用函数仍然维持 <span class="math notranslate nohighlight">\(u(c_1)+ \beta u(c_2)\)</span> 这样的形式，约束方面则变为</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1065,17 +1120,19 @@ v_1 &amp; = \beta \frac{u'(c_2)}{u'(c_1)}d_2 \\
 \[
 \frac{v_2}{d_1} = 1 + r_2
 \]</div>
-<div class="margin sidebar">
+<aside class="margin sidebar">
 <p class="sidebar-title"></p>
-<div class="figure align-default" id="id36">
+<figure class="align-default" id="id36">
 <div class="cell_output docutils container">
 <div class="output text_html"><img src="http://www.plantuml.com/plantuml/png/XPB1QyCW5CRl_XMlbx6oX4RPQOJIKUYfXnrsAqCaUKcbqOWQLZRwly-OaYMmjHV5x_tyVDz3id5UMD-fXYoC5RKIuB7z0cyx90j_H8LW6Y4rSIUfZR12GMaaiETigc0bkiQ_uzc_DhBM2hM78Yne2Gc8buKq8cZRLhjEeGNXe6ZrhBQJLlLw5NPIsxOpy8PMjYLGSaZNFVy2UICydjVx14xykyWk2JYUvQj19G_nCkJfnqW6hCek8n5C87ZrM42KyCVWDLZbgtWaqM9yBsgVdEwJH_faELtUXKjEOqy3SCZJQT5n-a-b-AsWBkS3O9C1N7kE-MdCFzwRnOzIdvwEpVuP_cfqCpqBM8pFbdVfahDR8Taqv2Oi_TVx0G=="/></div></div>
-<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">时序图</span><a class="headerlink" href="#id36" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-</div>
-<div class="section" id="id17">
-<h3>企业决策<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">时序图</span><a class="headerlink" href="#id36" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+</section>
+<section id="id17">
+<h3>企业决策<a class="headerlink" href="#id17" title="Permalink to this headline">#</a></h3>
 <p>对于企业而言，企业的最优化目标仍然是第1期分红前的股价最大化，即 <span class="math notranslate nohighlight">\(v_1 + d_1\)</span> ，同时最优化目标通过变化后也可以表达为两期贴现和最大值，即</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1111,9 +1168,9 @@ d_2 \hspace{25pt} &amp; \le AF(k_{f1} + k_1^d, l_2^d) - w_2l_2^d - r_2k_1^d + k_
 \frac{\partial F}{\partial k_{f1}} = 0 \quad &amp; \Rightarrow \quad 1 = \beta \frac{u'(c_2)}{u'(c_1)}[AF_{k_{f1}}(k_{f1} + k_1^d, l_2^d) + 1]
 \end{align*}
 \end{split}\]</div>
-</div>
-<div class="section" id="id18">
-<h3>一般均衡<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id18">
+<h3>一般均衡<a class="headerlink" href="#id18" title="Permalink to this headline">#</a></h3>
 <p>均衡时，劳动力、资本及股权市场全部出清，故有</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1163,28 +1220,28 @@ c_1 +k_1 &amp; = AF(k_0,L) + k_0 &amp;&amp; \text{1期资源总约束} \\
 c_2 &amp; = AF(k_1,L) + k_1 &amp;&amp; \text{2期资源总约束}
 \end{cases}
 \end{split}\]</div>
-</div>
-</div>
-<div class="section" id="id19">
-<h2>对储蓄的分析<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id20">
-<h3>储蓄的定义<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="id19">
+<h2>对储蓄的分析<a class="headerlink" href="#id19" title="Permalink to this headline">#</a></h2>
+<section id="id20">
+<h3>储蓄的定义<a class="headerlink" href="#id20" title="Permalink to this headline">#</a></h3>
 <p>首先，第1期社会总储蓄</p>
 <div class="math notranslate nohighlight">
 \[ saving = AF(k_0, L) - c_1 = k_1 - k_0 \]</div>
 <p>第1期中单个居民的预算约束可以表示为居民收入减去居民消费</p>
 <div class="math notranslate nohighlight" id="equation-consumer-saving-micro-equation">
-<span class="eqno">(6)<a class="headerlink" href="#equation-consumer-saving-micro-equation" title="Permalink to this equation">¶</a></span>\[
+<span class="eqno">(6)<a class="headerlink" href="#equation-consumer-saving-micro-equation" title="Permalink to this equation">#</a></span>\[
 saving_c^{Micro} = r_1k_{c0} + w_1L + d_1s_0 - c_1 = (k_{c1} - k_{c_0}) + (v_1s_1 - v_1s_0)
 \]</div>
 <p>通过将居民预算约束变形可得出</p>
 <div class="math notranslate nohighlight" id="equation-consumer-saving-macro-equation">
-<span class="eqno">(7)<a class="headerlink" href="#equation-consumer-saving-macro-equation" title="Permalink to this equation">¶</a></span>\[
+<span class="eqno">(7)<a class="headerlink" href="#equation-consumer-saving-macro-equation" title="Permalink to this equation">#</a></span>\[
 saving_c = r_1k_{c0} + w_1L + d_1 - c_1 = k_{c1} - k_{c0}
 \]</div>
 <div class="proof remark admonition" id="remark-0">
 <p class="admonition-title"><span class="caption-number">Remark 1 </span> (如何理解居民储蓄在微观层面以及宏观层面的两个等式)</p>
-<div class="remark-content section" id="proof-content">
+<section class="remark-content" id="proof-content">
 <ol class="simple">
 <li><p>微观层面到宏观层面的思路</p>
 <ul class="simple">
@@ -1199,10 +1256,10 @@ saving_c = r_1k_{c0} + w_1L + d_1 - c_1 = k_{c1} - k_{c0}
 </ul>
 </li>
 </ol>
-</div>
+</section>
 </div><p>如<a class="reference internal" href="#equation-consumer-saving-macro-equation">(7)</a>，通过对企业预算约束等式进行变换，则可得到企业部门的储蓄表达式</p>
 <div class="math notranslate nohighlight" id="equation-firm-saving-macro-equation">
-<span class="eqno">(8)<a class="headerlink" href="#equation-firm-saving-macro-equation" title="Permalink to this equation">¶</a></span>\[
+<span class="eqno">(8)<a class="headerlink" href="#equation-firm-saving-macro-equation" title="Permalink to this equation">#</a></span>\[
 saving_f = AF(k_0, L) - w_1L - r_1k_0 - d_1 = k_{f1} - f_{f0}
 \]</div>
 <p>将居民的储蓄等式<a class="reference internal" href="#equation-consumer-saving-macro-equation">(7)</a>和企业的储蓄等式<a class="reference internal" href="#equation-firm-saving-macro-equation">(8)</a>相加后可得</p>
@@ -1211,9 +1268,9 @@ saving_f = AF(k_0, L) - w_1L - r_1k_0 - d_1 = k_{f1} - f_{f0}
 saving_c + saving_f = k_{c1} - k_{c0} + k_{f1} - k_{f0} = (k_{c1} + k_{f1}) - (k_{c0} + k_{f0}) = k_1 - k_0
 \]</div>
 <p>居民与企业总储蓄仅与宏观变量 <span class="math notranslate nohighlight">\(k_1\)</span> 有关，这无疑验证了<a class="reference internal" href="#piercing-the-corporate-veil"><span class="std std-ref">刺穿企业帷幕</span></a>理论</p>
-</div>
-<div class="section" id="id21">
-<h3>总储蓄和净储蓄<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id21">
+<h3>总储蓄和净储蓄<a class="headerlink" href="#id21" title="Permalink to this headline">#</a></h3>
 <dl class="simple myst">
 <dt>总储蓄(gross saving)</dt><dd><p>部门的收入 - 消费</p>
 </dd>
@@ -1229,12 +1286,12 @@ S_{net} &amp;= S - I \\
 CA &amp;= S - I = S_net
 \end{align*}
 \end{split}\]</div>
-</div>
-</div>
-<div class="section" id="id22">
-<h2>现实中消费与储蓄如何决定<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id23">
-<h3>居民角度<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="id22">
+<h2>现实中消费与储蓄如何决定<a class="headerlink" href="#id22" title="Permalink to this headline">#</a></h2>
+<section id="id23">
+<h3>居民角度<a class="headerlink" href="#id23" title="Permalink to this headline">#</a></h3>
 <p>消费者想要最大化效用 <span class="math notranslate nohighlight">\(U\)</span>，而因为今天和明天同1单位消费的效用是不同的，所以对于两期模型，最大化效用可以表达为 <span class="math notranslate nohighlight">\(U(c_1) + \beta U(c_2)\)</span> ，其中 <span class="math notranslate nohighlight">\(0&lt; \beta &lt; 1\)</span></p>
 <ul class="simple">
 <li><p>因为人性不耐，所以未来的效用需要贴现（打折扣）</p></li>
@@ -1249,23 +1306,23 @@ CA &amp;= S - I = S_net
 <p class="admonition-title">Note</p>
 <p>最优消费/储蓄的状态是指消费者在<code class="docutils literal notranslate"><span class="pre">消费的主观偏好</span></code>与<code class="docutils literal notranslate"><span class="pre">资本回报率</span></code>之间的平衡，也就是<code class="docutils literal notranslate"><span class="pre">消费者跨期效用比</span></code>与<code class="docutils literal notranslate"><span class="pre">资本回报率</span></code>之间的平衡。</p>
 </div>
-</div>
-</div>
-<div class="section" id="id24">
-<h2>图形解释<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="id24">
+<h2>图形解释<a class="headerlink" href="#id24" title="Permalink to this headline">#</a></h2>
 <p>TBD</p>
-<div class="section" id="id25">
-<h3>企业的分红可能性边界<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="id26">
-<h3>消费者的主观时间偏好<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="id27">
-<h3>企业所有权竞争市场中的企业与消费者<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h3>
-</div>
-</div>
-<div class="section" id="id28">
-<h2>再论萨伊定律及总结<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h2>
+<section id="id25">
+<h3>企业的分红可能性边界<a class="headerlink" href="#id25" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="id26">
+<h3>消费者的主观时间偏好<a class="headerlink" href="#id26" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="id27">
+<h3>企业所有权竞争市场中的企业与消费者<a class="headerlink" href="#id27" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="id28">
+<h2>再论萨伊定律及总结<a class="headerlink" href="#id28" title="Permalink to this headline">#</a></h2>
 <p>萨伊定律认为宏观经济中不太可能出现生产过剩及就业不足，反映了起对市场高效运作的信心</p>
 <ul class="simple">
 <li><p>生产是因为需求已经在之前产生</p></li>
@@ -1291,30 +1348,30 @@ CA &amp;= S - I = S_net
 <p class="admonition-title">Hint</p>
 <p>所以，实际上拉姆齐模型实际上隐含着萨伊定律的成立，这也意味着该模型情况下，经济增长的瓶颈在于供给面，而非需求面。</p>
 </div>
-</div>
-<div class="section" id="id29">
-<h2>中国消费和储蓄的基本事实<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="id29">
+<h2>中国消费和储蓄的基本事实<a class="headerlink" href="#id29" title="Permalink to this headline">#</a></h2>
 <p>TBD</p>
-</div>
-<div class="section" id="id30">
-<h2>模型与中国经济的数量分析<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="id30">
+<h2>模型与中国经济的数量分析<a class="headerlink" href="#id30" title="Permalink to this headline">#</a></h2>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
 <p>TBD</p>
 </div>
-</div>
-<div class="section" id="id31">
-<h2>补充：多期模型的扩展<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="id32">
-<h2>补充：理性预期<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="id31">
+<h2>补充：多期模型的扩展<a class="headerlink" href="#id31" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="id32">
+<h2>补充：理性预期<a class="headerlink" href="#id32" title="Permalink to this headline">#</a></h2>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
 <p>TBD</p>
 </div>
-</div>
-<div class="section" id="id33">
-<h2>课后练习<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="id33">
+<h2>课后练习<a class="headerlink" href="#id33" title="Permalink to this headline">#</a></h2>
 <div class="exercise admonition">
 <p class="admonition-title">问题</p>
 <p>拉姆齐两期模型中，嘉定企业的生产函数为 <span class="math notranslate nohighlight">\(y=k^{0.5}\)</span> （生产不需要劳动力），全社会在第1期期初的资本存量为1。在第1期期初全社会的总资本中，有一半属于居民，一半属于企业，并且企业所有权在居民手中</p>
@@ -1330,11 +1387,13 @@ CA &amp;= S - I = S_net
 <div class="solution dropdown admonition">
 <p class="admonition-title">答案</p>
 <p><strong>第一题</strong></p>
-<div class="figure align-default" id="id37" style="width: 40%">
+<figure class="align-default" id="id37" style="width: 40%">
 <div class="cell_output docutils container">
 <div class="output text_html"><img src="http://www.plantuml.com/plantuml/png/XP8nQyCm48Lt_OhBKXeQ4yjqAYAa53ftw1QA4FRP4R5a8PqXjEI_LrPQrnvIBoVqxhkdUo2s3wGyzQPbA-TLOnGGTfz0laUseYCQ1DSgRLauQUkKLmOgfw5upASArgflwHtFzDpgnXgq16Kiw1cB2EbIEnMrbyw6tg075Q3ixAptghqPz3gUhF5Tx-0DlUuguEoGxGR-2KIh2C-xa_mgyyi6Wip5zYgnkpG98lkOOdL-6Ode0D5em29Y51r_ZCGsNLWo69zAsZr_y9Al5xbAyhJC5JY8RDeCaj_eb7yTjDKyTZ69FIxBK-fnQ1Rw5whvkEcDo7mnSh5Uv2fP_1Uic0RRnp9yicy="/></div></div>
-<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">时序图</span><a class="headerlink" href="#id37" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">时序图</span><a class="headerlink" href="#id37" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>居民方面：</p>
 <p>居民的效用最大化目标函数及约束条件是</p>
 <div class="math notranslate nohighlight">
@@ -1519,8 +1578,8 @@ c_2 &amp; = k_1^{0.5} + k_1 \\
 <p class="admonition-title">答案</p>
 <p>结论是萨伊定律在中国不能成立。</p>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1544,9 +1603,11 @@ c_2 &amp; = k_1^{0.5} + k_1 \\
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="ch05-06.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -1562,24 +1623,28 @@ c_2 &amp; = k_1^{0.5} + k_1 \\
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By SID<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
     
-      By SID<br/>
-    
-        &copy; Copyright 2022.<br/>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
