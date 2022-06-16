@@ -18,6 +18,7 @@ parts:
       - file: notes/economics/macro-25/ch10.md
       - file: notes/economics/macro-25/ch11.md
       - file: notes/economics/macro-25/ch12-13.md
+      - file: notes/economics/macro-25/ch14.md
 
   - caption: Topics
     chapters:
